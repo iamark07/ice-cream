@@ -65,37 +65,6 @@
         </div>
     </section>
 
-    <!-- Store Locator Section -->
-    <section id="store-locator" class="bg-gradient-to-r from-green-400 to-blue-500 py-20 px-6 md:px-16 lg:px-24 text-white text-center poppins-regular">
-        <div class="container mx-auto">
-            <h2 class="text-2xl md:text-4xl font-semibold text-white-500 mb-5 font-pacifico animate-bounce">📍 Find a Store Near You! 📍</h2>
-            <p class="md:text-xl mb-8">Locate your nearest franchise outlet and enjoy your favorite ice cream anytime, anywhere.</p>
-            
-            <!-- Search Bar -->
-            <div class="bg-white p-4 rounded-lg shadow-lg flex items-center justify-between max-w-lg mx-auto mb-8">
-                <input type="text" id="location-input" class="w-full p-3 border rounded-l-lg text-gray-800 text-sm" placeholder="Enter city or ZIP code">
-                <button id="search-location" type="submit" class="bg-pink-500 text-white text-sm px-6 py-3 rounded-r-lg font-semibold hover:bg-pink-600 transition-all flex gap-1 items-center"><i class="ri-search-line" title="Search"></i><span class="hidden md:block">Search</span></button>
-            </div>
-            
-            <!-- Store Locations List -->
-            <div id="store-results" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-5">
-                <!-- Example Store (Will be dynamically generated) -->
-                <div class="store-card bg-white text-gray-800 p-6 rounded-lg shadow-lg">
-                    <img src="{{asset('assets/img/franchise.jpg')}}" alt="Store Image" class="w-full h-40 object-cover rounded-md mb-4">
-                    <h3 class="text-xl font-bold">Ice Cream Delight - New Delhi</h3>
-                    <p class="text-sm mb-2">123, Main Street, NY 10001</p>
-                    <a href="https://maps.google.com" target="_blank" class="text-pink-500 font-semibold">View on Map</a>
-                </div>
-                <div class="store-card bg-white text-gray-800 p-6 rounded-lg shadow-lg">
-                    <img src="{{asset('assets/img/franchise.jpg')}}" alt="Store Image" class="w-full h-40 object-cover rounded-md mb-4">
-                    <h3 class="text-xl font-bold">Ice Cream Delight - New Delhi</h3>
-                    <p class="text-sm mb-2">123, Main Street, NY 10001</p>
-                    <a href="https://maps.google.com" target="_blank" class="text-pink-500 font-semibold">View on Map</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Trending Products Section -->
     <section id="trending-products" class="py-20 bg-[#f8f8f8] text-center">
         <div class="mx-auto px-5 md:px-10 xl:px-32">
@@ -125,7 +94,7 @@
     </section>
 
     <!-- Special Offer Section -->
-    <section id="special-offer" class="bg-gradient-to-r from-yellow-300 to-pink-400 mt-10 px-5 md:px-16 lg:px-32 py-20">
+    <section id="special-offer" class="bg-gradient-to-r from-yellow-300 to-pink-400 px-5 md:px-16 lg:px-32 py-20">
         <div class="container mx-auto bg-white grid grid-cols-1 md:grid-cols-2 gap-10 items-center py-10 px-6 md:px-10 lg:px-16 shadow-lg">
             
             <!-- Offer Details -->
@@ -204,6 +173,37 @@
                     
                     <li class="pagination-btn cursor-pointer bg-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all">Next</li>
                 </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Locator Section -->
+    <section id="store-locator" class="bg-gradient-to-r from-green-400 to-blue-500 py-20 px-6 md:px-16 lg:px-24 text-white text-center poppins-regular">
+        <div class="container mx-auto">
+            <h2 class="text-2xl md:text-4xl font-semibold text-white-500 mb-5 font-pacifico animate-bounce">📍 Find a Store Near You! 📍</h2>
+            <p class="md:text-xl mb-8">Locate your nearest franchise outlet and enjoy your favorite ice cream anytime, anywhere.</p>
+            
+            <!-- Search Bar -->
+            <div class="bg-white p-4 rounded-lg shadow-lg flex items-center justify-between max-w-lg mx-auto mb-8">
+                <input type="text" id="location-input" class="w-full p-3 border rounded-l-lg text-gray-800 text-sm" placeholder="Enter city or ZIP code">
+                <button id="search-location" type="submit" class="bg-pink-500 text-white text-sm px-6 py-3 rounded-r-lg font-semibold hover:bg-pink-600 transition-all flex gap-1 items-center"><i class="ri-search-line" title="Search"></i><span class="hidden md:block">Search</span></button>
+            </div>
+            
+            <!-- Store Locations List -->
+            <div id="store-results" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-5">
+                <!-- Example Store (Will be dynamically generated) -->
+                <div class="store-card bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                    <img src="{{asset('assets/img/franchise.jpg')}}" alt="Store Image" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold">Ice Cream Delight - New Delhi</h3>
+                    <p class="text-sm mb-2">123, Main Street, NY 10001</p>
+                    <a href="https://maps.google.com" target="_blank" class="text-pink-500 font-semibold">View on Map</a>
+                </div>
+                <div class="store-card bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                    <img src="{{asset('assets/img/franchise.jpg')}}" alt="Store Image" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold">Ice Cream Delight - New Delhi</h3>
+                    <p class="text-sm mb-2">123, Main Street, NY 10001</p>
+                    <a href="https://maps.google.com" target="_blank" class="text-pink-500 font-semibold">View on Map</a>
+                </div>
             </div>
         </div>
     </section>
@@ -406,7 +406,7 @@
                         </div>
                         <h3 class="text-lg font-semibold text-pink-500 poppins-regular">🌟 New Ice Cream Trends in 2025</h3>
                         <p class="text-gray-600 mt-2 poppins-regular">Discover the latest flavors, textures, and unique ice cream innovations taking over this year!</p>
-                        <a href="#" class="bg-pink-500 text-sm text-white py-3 px-5 rounded-lg font-semibold mt-3 inline-block hover:underline poppins-regular">Read More →</a>
+                        <a href="#" class="bg-pink-500 text-sm text-white py-3 px-5 rounded-lg font-semibold mt-3 inline-block  poppins-regular">Read More →</a>
                     </div>
                 </div>
     
@@ -420,7 +420,7 @@
                         </div>
                         <h3 class="text-lg font-semibold text-pink-500 poppins-regular">🍨 Homemade Ice Cream Recipe</h3>
                         <p class="text-gray-600 mt-2 poppins-regular">Learn how to make delicious homemade ice cream with just 3 ingredients! Easy & fun.</p>
-                        <a href="#" class="bg-pink-500 text-sm text-white py-3 px-5 rounded-lg font-semibold mt-3 inline-block hover:underline poppins-regular">Read More →</a>
+                        <a href="#" class="bg-pink-500 text-sm text-white py-3 px-5 rounded-lg font-semibold mt-3 inline-block  poppins-regular">Read More →</a>
                     </div>
                 </div>
     
@@ -434,7 +434,7 @@
                         </div>
                         <h3 class="text-lg font-semibold text-pink-500 poppins-regular">🚀 New Ice Cream Flavors Launched!</h3>
                         <p class="text-gray-600 mt-2 poppins-regular">We’ve just introduced 5 new mouth-watering flavors. Find out which one suits your taste!</p>
-                        <a href="#" class="bg-pink-500 text-sm text-white py-3 px-5 rounded-lg font-semibold mt-3 inline-block hover:underline poppins-regular">Read More →</a>
+                        <a href="#" class="bg-pink-500 text-sm text-white py-3 px-5 rounded-lg font-semibold mt-3 inline-block  poppins-regular">Read More →</a>
                     </div>
                 </div>
             </div>
@@ -510,6 +510,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
+    {{-- header section js --}}
     <script src="{{ asset('assets/js/header.js') }}"></script>
     <script src="{{ asset('assets/js/script.js') }}"></script>
 </body>

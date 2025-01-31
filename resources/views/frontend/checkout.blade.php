@@ -111,6 +111,6 @@
             </div>
         </div>
     </section>
-
+    {{-- header section js --}}
     <script src="{{ asset('assets/js/header.js') }}"></script>
 </body>

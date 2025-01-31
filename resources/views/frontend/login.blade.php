@@ -14,17 +14,22 @@
             <form action="#" method="POST">
                 @csrf
                 <div class="mb-4">
-                    <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500 text-sm" required>
+                    <label for="email_&_phone" class="block text-gray-700 text-sm font-medium mb-2">Email Or Mobile</label>
+                    <input type="text" id="email_&_phone" name="email_&_phone" placeholder="Enter Email or Mobile" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500 text-sm" required>
                 </div>
-                <div class="mb-6">
+
+                <!-- Password Field with Eye Icon -->
+                <div class="mb-6 relative">
                     <label for="password" class="block text-gray-700 text-sm font-medium mb-2">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500 text-sm" required>
+                    <div class="relative">
+                        <input type="password" id="password" name="password" placeholder="Enter your password" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500 text-sm pr-10" required>
+                        <i id="togglePassword" class="ri-eye-off-line absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 cursor-pointer"></i>
+                    </div>
                 </div>
                 
                 <!-- Remember Me -->
                 <div class="flex items-center mb-6">
-                    <input type="checkbox" id="remember" name="remember" class="h-5 w-5 text-pink-500 focus:ring-2 focus:ring-pink-500">
+                    <input type="checkbox" id="remember" name="remember" class="h-4 w-4">
                     <label for="remember" class="ml-2 text-gray-700 text-sm">Remember Me</label>
                 </div>
                 
@@ -47,11 +52,11 @@
             <div class="mt-6 flex flex-col gap-2 justify-center">
                 <!-- Google Login -->
                 <a href="#" class="w-full shadow-md p-3 rounded-md text-center transition duration-200 flex items-center justify-center text-sm">
-                    <img src="{{ asset('assets/img/social-media/google.png')}}" alt="" class="me-2 w-10">Login with Google
+                    <img src="{{ asset('assets/img/social-media/google.png')}}" alt="" class="me-2 w-8">Login with Google
                 </a>
                 <!-- Facebook Login -->
                 <a href="#" class="w-full shadow-md p-3 rounded-md text-center transition duration-200 flex items-center justify-center text-sm">
-                    <img src="{{ asset('assets/img/social-media/facebook.png')}}" alt="" class="me-2 w-10">Login with Facebook
+                    <img src="{{ asset('assets/img/social-media/facebook.png')}}" alt="" class="me-2 w-8">Login with Facebook
                 </a>
             </div>
             
@@ -63,6 +68,28 @@
         </div>
     </section>
 
+    {{-- login custom js --}}
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const passwordField = document.getElementById("password");
+            const togglePassword = document.getElementById("togglePassword");
+
+            // Toggle password visibility
+            togglePassword.addEventListener("click", function () {
+                if (passwordField.type === "password") {
+                    passwordField.type = "text";
+                    togglePassword.classList.remove("ri-eye-off-line");
+                    togglePassword.classList.add("ri-eye-line");
+                } else {
+                    passwordField.type = "password";
+                    togglePassword.classList.remove("ri-eye-line");
+                    togglePassword.classList.add("ri-eye-off-line");
+                }
+            });
+        });
+    </script>
+
+    {{-- header section js --}}
     <script src="{{ asset('assets/js/header.js') }}"></script>
 </body>
 </html>
