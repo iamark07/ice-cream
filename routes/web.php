@@ -21,17 +21,21 @@ Route::get('/contact', function () {
     return view('frontend.contact');
 })->name('contact');
 
+Route::get('/checkout', function () {
+    return view('frontend.checkout');
+})->name('checkout');
+
 Route::get('/faq', function () {
     return view('frontend.faq');
-});
+})->name('faq');
 
 Route::get('/login', function () {
     return view('frontend.login');
-});
+})->name('login');
 
 Route::get('/register', function () {
     return view('frontend.register');
-});
+})->name('register');
 
 Route::get('/cart', function () {
     return view('frontend.cart');
