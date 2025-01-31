@@ -254,3 +254,62 @@ $(document).ready(function () {
         mouseDrag: true, // Enable dragging with mouse
     });
 });
+
+// FAQs Toggle
+// document.querySelectorAll(".faq-question").forEach(item => {
+//     item.addEventListener("click", () => {
+//         let answer = item.nextElementSibling;
+//         answer.classList.toggle("hidden");
+//     });
+// });
+
+// Contact Form Submission
+document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert(
+            "Your message has been sent successfully! We will contact you soon."
+        );
+        this.reset();
+    });
+
+// Chatbot Button Click
+// document.getElementById("chatbot-btn").addEventListener("click", function() {
+//     alert("Live Chat Support is coming soon!");
+// });
+
+// Scroll to Top Button
+const scrollToTopBtn = document.getElementById("scrollToTop");
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+        scrollToTopBtn.classList.remove("opacity-0");
+        scrollToTopBtn.classList.remove("pointer-events-none");
+    } else {
+        scrollToTopBtn.classList.add("opacity-0");
+        scrollToTopBtn.classList.add("pointer-events-none");
+    }
+});
+scrollToTopBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+
+
+// product categories
+document.getElementById("filter-toggle").addEventListener("click", function() {
+    document.getElementById("filter-dropdown").classList.toggle("hidden");
+});
+
+document.querySelectorAll(".filter-btn").forEach(button => {
+    button.addEventListener("click", () => {
+        document.getElementById("filter-dropdown").classList.add("hidden");
+        alert("Filtering feature will be implemented soon!");
+    });
+});
+
+document.querySelectorAll(".pagination-btn").forEach(button => {
+    button.addEventListener("click", () => {
+        alert("Pagination feature will be implemented soon!");
+    });
+});

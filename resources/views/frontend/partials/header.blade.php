@@ -1,6 +1,5 @@
 <!-- Header Section -->
-<header
-    class="fixed z-40 w-full bg-gradient-to-r from-pink-400/80 via-blue-300/80 to-pink-500/80 shadow-lg  backdrop-blur-lg overflow-hidden">
+<header class="fixed z-40 w-full bg-gradient-to-r from-pink-400/80 via-blue-300/80 to-pink-500/80 shadow-lg backdrop-blur-lg overflow-hidden">
     <div class="flex justify-between items-center px-6 md:px-10 py-4">
         <!-- Left Section: Social Icons -->
         <div class="animate hidden lg:flex gap-6">
@@ -12,22 +11,22 @@
         <!-- Center Section: Logo and Navigation -->
         <div class="animate flex items-center">
             <nav class="hidden lg:flex gap-6">
-                <a href="index.html" class="hover:text-pink-500 text-white transition poppins-regular">Home</a>
-                <a href="about.html" class="hover:text-pink-500 text-white transition poppins-regular">About</a>
-                <a href="services.html" class="hover:text-pink-500 text-white transition poppins-regular">Services</a>
+                <a href="{{ route('home') }}" class="hover:text-pink-500 text-white transition poppins-regular">Home</a>
+                <a href="{{ route('about') }}" class="hover:text-pink-500 text-white transition poppins-regular">About</a>
+                <a href="{{ route('services') }}" class="hover:text-pink-500 text-white transition poppins-regular">Services</a>
             </nav>
-            <h1 class="text-xl md:text-2xl font-pacifico text-pink-700 px-0 lg:px-10"><a href="index.html">Ice Cream</a></h1>
+            <h1 class="text-xl md:text-2xl font-pacifico text-pink-700 px-0 lg:px-10"><a href="{{ route('home') }}">Ice Cream</a></h1>
             <nav class="hidden lg:flex gap-6">
-                <a href="shop.html" class="hover:text-pink-500 text-white transition poppins-regular">Shop</a>
-                <a href="flavor.html" class="hover:text-pink-500 text-white transition poppins-regular">Flavors</a>
-                <a href="contact.html" class="hover:text-pink-500 text-white transition poppins-regular">Contact</a>
+                <a href="{{ route('shop') }}" class="hover:text-pink-500 text-white transition poppins-regular">Shop</a>
+                <a href="{{ route('flavors') }}" class="hover:text-pink-500 text-white transition poppins-regular">Flavors</a>
+                <a href="{{ route('contact') }}" class="hover:text-pink-500 text-white transition poppins-regular">Contact</a>
             </nav>
         </div>
 
         <!-- Right Section: Cart, Login, Multi-Language & Currency Selector -->
         <div class="animate hidden lg:flex gap-6 items-center">
             <i class="search_icon ri-search-line hover:text-pink-500 text-white text-xl cursor-pointer" title="Search"></i>
-            <a href="cart.html" class="text-lg transition"><i class="ri-shopping-cart-line hover:text-pink-500 text-white text-xl" title="Cart"></i></a>
+            <a href="{{ route('cart') }}" class="text-lg transition"><i class="ri-shopping-cart-line hover:text-pink-500 text-white text-xl" title="Cart"></i></a>
 
             <!-- Profile Dropdown -->
             <div class="relative">
@@ -65,8 +64,8 @@
                             </ul>
                         </li>
 
-                        <li class="p-2 hover:bg-gray-100 rounded transition"><a href="logout.html" class="flex"><i class="ri-login-box-line text-pink-400 text-lg me-2"></i>Log in</a></li>
-                        <li class="p-2 hover:bg-gray-100 rounded transition"><a href="logout.html"><i class="ri-logout-box-line text-pink-400 text-lg me-2"></i>Log out</a></li>
+                        <li class="p-2 hover:bg-gray-100 rounded transition"><a href="{{ route('login') }}" class="flex"><i class="ri-login-box-line text-pink-400 text-lg me-2"></i>Log in</a></li>
+                        <li class="p-2 hover:bg-gray-100 rounded transition"><a href="{{ route('logout') }}"><i class="ri-logout-box-line text-pink-400 text-lg me-2"></i>Log out</a></li>
                     </ul>
                 </div>
             </div>
@@ -79,6 +78,7 @@
         </div>
     </div>
 </header>
+
 
 <!-- Search Popup -->
 <div id="search-popup"
@@ -152,5 +152,15 @@
     </div>
     <span id="close-menu" class="w-1/4 h-full inline-block"></span>
 </div>
+
+<!-- Live Chatbot Button -->
+<button id="chatbot-btn" class="cursor-pointer fixed z-30 bottom-6 left-6 bg-pink-500 text-sm text-white w-10 h-10 md:w-auto md:h-auto md:px-5 md:py-3 rounded-full shadow-lg hover:bg-pink-700 transition-all poppins-regular flex items-center justify-center gap-2">
+    💬 <span class="hidden md:block">Live Chat</span>
+</button>
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTop" class="animate-bounce fixed z-20 bottom-6 right-6 bg-pink-500 text-white w-12 h-12 grid place-items-center rounded-full shadow-lg opacity-0 pointer-events-none transition-all hover:bg-pink-600">
+    <i class="ri-arrow-up-s-line text-2xl"></i>
+</button>
 
 

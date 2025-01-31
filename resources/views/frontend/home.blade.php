@@ -41,7 +41,7 @@
     <!-- Enhanced Brand Story Section -->
     <section id="brand-story" class="bg-gradient-to-r from-pink-500 to-yellow-400 py-28 md:py-20 text-center text-white relative overflow-hidden">
         <div class="container mx-auto px-6 md:px-16 relative z-10">
-            <h2 class="text-2xl md:text-4xl font-extrabold mb-8 animate-fade-in animate-bounce">The Sweet Journey of Our Ice Cream</h2>
+            <h2 class="text-2xl md:text-4xl font-extrabold mb-8 animate-fade-in font-pacifico animate-bounce">The Sweet Journey of Our Ice Cream</h2>
             
             <p class="text-sm md:text-base max-w-4xl mx-auto mb-6 leading-relaxed animate-fade-in delay-200">
                 From a small family kitchen to a beloved ice cream brand, our journey has been filled with passion, creativity, and a love for frozen delights. We handcraft each flavor using <span class="font-semibold">fresh, natural ingredients</span>, ensuring every bite is an experience of pure joy!
@@ -65,35 +65,60 @@
         </div>
     </section>
 
+    <!-- Store Locator Section -->
+    <section id="store-locator" class="bg-gradient-to-r from-green-400 to-blue-500 py-20 px-6 md:px-16 lg:px-24 text-white text-center poppins-regular">
+        <div class="container mx-auto">
+            <h2 class="text-2xl md:text-4xl font-semibold text-white-500 mb-5 font-pacifico animate-bounce">📍 Find a Store Near You! 📍</h2>
+            <p class="md:text-xl mb-8">Locate your nearest franchise outlet and enjoy your favorite ice cream anytime, anywhere.</p>
+            
+            <!-- Search Bar -->
+            <div class="bg-white p-4 rounded-lg shadow-lg flex items-center justify-between max-w-lg mx-auto mb-8">
+                <input type="text" id="location-input" class="w-full p-3 border rounded-l-lg text-gray-800 text-sm" placeholder="Enter city or ZIP code">
+                <button id="search-location" type="submit" class="bg-pink-500 text-white text-sm px-6 py-3 rounded-r-lg font-semibold hover:bg-pink-600 transition-all flex gap-1 items-center"><i class="ri-search-line" title="Search"></i><span class="hidden md:block">Search</span></button>
+            </div>
+            
+            <!-- Store Locations List -->
+            <div id="store-results" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-5">
+                <!-- Example Store (Will be dynamically generated) -->
+                <div class="store-card bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                    <img src="{{asset('assets/img/franchise.jpg')}}" alt="Store Image" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold">Ice Cream Delight - New Delhi</h3>
+                    <p class="text-sm mb-2">123, Main Street, NY 10001</p>
+                    <a href="https://maps.google.com" target="_blank" class="text-pink-500 font-semibold">View on Map</a>
+                </div>
+                <div class="store-card bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                    <img src="{{asset('assets/img/franchise.jpg')}}" alt="Store Image" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold">Ice Cream Delight - New Delhi</h3>
+                    <p class="text-sm mb-2">123, Main Street, NY 10001</p>
+                    <a href="https://maps.google.com" target="_blank" class="text-pink-500 font-semibold">View on Map</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Trending Products Section -->
-    <section id="trending-products" class="py-20 bg-white text-center">
-        <div class="mx-auto px-5 md:px-10">
+    <section id="trending-products" class="py-20 bg-[#f8f8f8] text-center">
+        <div class="mx-auto px-5 md:px-10 xl:px-32">
             <h2 class="text-2xl md:text-4xl font-semibold text-pink-500 mb-20 font-pacifico animate-bounce">Trending Products</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-8">
                 <!-- Product Cards -->
-                <div class="p-6 bg-white shadow-[0px_0px_20px_5px_rgba(229,231,235,0.9)] rounded-lg transform transition duration-300 hover:scale-105">
+                <div class="bg-white p-6 shadow-lg text-center rounded-lg transform transition duration-300 hover:scale-105">
                     <img src="{{ asset('assets/img/trending.png')}}" class="w-full h-56 object-cover rounded-md" alt="Chocolate Ice Cream">
                     <h3 class="text-xl font-semibold text-gray-800 mt-4">Chocolate Ice Cream</h3>
                     <p class="text-pink-700 font-semibold">&#8377;5.99</p>
-                    <button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all">Add to Cart</button>
+                    <button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
                 </div>
-                <div class="p-6 bg-white shadow-[0px_0px_20px_5px_rgba(229,231,235,0.9)] rounded-lg transform transition duration-300 hover:scale-105">
+                <div class="bg-white p-6 shadow-lg text-center rounded-lg transform transition duration-300 hover:scale-105">
                     <img src="{{ asset('assets/img/trending.png')}}" class="w-full h-56 object-cover rounded-md" alt="Chocolate Ice Cream">
                     <h3 class="text-xl font-semibold text-gray-800 mt-4">Chocolate Ice Cream</h3>
                     <p class="text-pink-700 font-semibold">&#8377;5.99</p>
-                    <button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all">Add to Cart</button>
+                    <button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
                 </div>
-                <div class="p-6 bg-white shadow-[0px_0px_20px_5px_rgba(229,231,235,0.9)] rounded-lg transform transition duration-300 hover:scale-105">
+                <div class="bg-white p-6 shadow-lg text-center rounded-lg transform transition duration-300 hover:scale-105">
                     <img src="{{ asset('assets/img/trending.png')}}" class="w-full h-56 object-cover rounded-md" alt="Chocolate Ice Cream">
                     <h3 class="text-xl font-semibold text-gray-800 mt-4">Chocolate Ice Cream</h3>
                     <p class="text-pink-700 font-semibold">&#8377;5.99</p>
-                    <button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all">Add to Cart</button>
-                </div>
-                <div class="p-6 bg-white shadow-[0px_0px_20px_5px_rgba(229,231,235,0.9)] rounded-lg transform transition duration-300 hover:scale-105">
-                    <img src="{{ asset('assets/img/trending.png')}}" class="w-full h-56 object-cover rounded-md" alt="Chocolate Ice Cream">
-                    <h3 class="text-xl font-semibold text-gray-800 mt-4">Chocolate Ice Cream</h3>
-                    <p class="text-pink-700 font-semibold">&#8377;5.99</p>
-                    <button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all">Add to Cart</button>
+                    <button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>   Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -127,11 +152,67 @@
         </div>
     </section>
 
+    <!-- Product Listings Section -->
+    <section id="product-listing" class="bg-[#f8f8f8] py-20 px-6 md:px-16 lg:px-24 poppins-regular">
+        <div class="container mx-auto">
+            <h2 class="text-2xl md:text-4xl font-semibold text-white-500 mb-10 font-pacifico animate-bounce text-pink-500 text-center">Explore Our Ice Creams</h2>
+            
+            <!-- Filter Dropdown Button -->
+            <div class=" flex justify-center mb-10">
+                <div class="w-fit relative">
+                    <button id="filter-toggle" class="bg-pink-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-pink-600 transition-all">Filter Categories <i class="ri-arrow-down-s-line"></i></button>
+                    <div id="filter-dropdown" class="hidden z-10 absolute bg-white shadow-lg rounded-lg mt-2 py-2 w-full left-1/2 transform -translate-x-1/2 p-2">
+                        <button class="filter-btn w-full text-left px-5 py-2 hover:bg-pink-500 hover:text-white rounded-md transition-all" data-category="all">All</button>
+                        <button class="filter-btn w-full text-left px-5 py-2 hover:bg-pink-500 hover:text-white rounded-md transition-all" data-category="chocolate">Chocolate</button>
+                        <button class="filter-btn w-full text-left px-5 py-2 hover:bg-pink-500 hover:text-white rounded-md transition-all" data-category="fruity">Fruity</button>
+                        <button class="filter-btn w-full text-left px-5 py-2 hover:bg-pink-500 hover:text-white rounded-md transition-all" data-category="nuts">Nutty</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Grid -->
+            <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Static Products -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <img src="{{asset('assets/img/portfolio-1.jpg')}}" alt="Chocolate Bliss" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold">Chocolate Bliss</h3>
+                    <p class="text-lg text-gray-600">&#8377; 5.99</p>
+                    <button class="mt-4 bg-pink-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <img src="{{asset('assets/img/portfolio-2.jpg')}}" alt="Strawberry Delight" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold">Strawberry Delight</h3>
+                    <p class="text-lg text-gray-600">&#8377; 4.99</p>
+                    <button class="mt-4 bg-pink-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <img src="{{asset('assets/img/portfolio-3.jpg')}}" alt="Nutty Caramel" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-bold">Nutty Caramel</h3>
+                    <p class="text-lg text-gray-600">&#8377; 6.49</p>
+                    <button class="mt-4 bg-pink-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
+                </div>
+            </div>
+    
+            <!-- Pagination -->
+            <div class="flex justify-center mt-10">
+                <ul class="flex justify-center gap-3">
+                    <li class="pagination-btn cursor-pointer bg-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all">Prev</li>
+                    
+                    <li class="pagination-btn cursor-pointer bg-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all">1</li>
+                    <li class="pagination-btn cursor-pointer bg-white text-black px-4 py-2 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all">2</li>
+                    <li class="pagination-btn cursor-pointer bg-white text-black px-4 py-2 rounded-lg shadow-md hover:bg-pink-500  hover:text-white transition-all">3</li>
+                    
+                    <li class="pagination-btn cursor-pointer bg-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all">Next</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <!-- Ice Cream Gallery Section -->
-    <section class="bg-gradient-to-r from-blue-300 via-pink-200 to-yellow-200 py-16">
+    <section class="py-24">
     <div class="text-center mb-10">
-        <h2 class="text-2xl md:text-4xl font-bold text-pink-600 poppins-regular animate-bounce">🍦 Ice Cream Gallery 🍦</h2>
-        <p class="mt-2">Explore our delicious ice cream flavors and varieties!</p>
+        <h2 class="text-2xl md:text-4xl font-semibold text-pink-500 mb-5 font-pacifico animate-bounce">🍦 Ice Cream Gallery 🍦</h2>
+        <p class="mt-2 poppins-regular">Explore our delicious ice cream flavors and varieties!</p>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6">
@@ -198,6 +279,116 @@
         <button id="nextBtn" class="absolute right-5 text-white text-3xl bg-gray-700 w-10 h-10 md:w-16 md:h-16 grid place-items-center rounded-full hover:bg-gray-600 transition" onclick="nextImage()"><i class="ri-arrow-right-s-line text-xl md:text-3xl"></i></button>
     </div>
 
+    <!-- Franchise Inquiry Section -->
+    <section id="franchise-inquiry" class="bg-gradient-to-r from-blue-400 to-purple-500 py-20 px-6 md:px-10 xl:px-20 text-white text-center">
+        <div class="">
+            <h2 class="text-2xl md:text-4xl font-semibold text-white-500 mb-5 font-pacifico animate-bounce">🍦 Become Our Franchise Partner! 🍦</h2>
+            <p class="mb-8 poppins-regular">Join our growing family and bring the joy of our delicious ice creams to your city. Fill the form below to get started!</p>
+            
+            <div class="grid grid-cols-2 gap-7 md:gap-5 xl:gap-10 lg:bg-white lg:p-10 rounded-lg">
+                <div class="col-span-2 lg:col-span-1 items-center hidden lg:flex">
+                    <img src="{{ asset('assets/img/franchise.jpg')}}" alt="" class="w-full h-full object-cover rounded-lg">
+                </div>
+
+                <div class="col-span-2 lg:col-span-1 bg-white px-5 py-8 md:p-8 rounded-lg shadow-lg text-gray-800">
+                    <h2 class="text-lg md:text-2xl font-semibold text-white-500 mb-5 poppins-regular">Franchise Inquery</h2>
+                    <!-- Inquiry Form -->
+                    <form id="franchise-form">
+                        <div class="grid grid-cols-2 gap-5">
+                            <!-- Name -->
+                            <div class="flex flex-col items-start col-span-2 sm:col-span-1">
+                                <label class="font-semibold text-sm poppins-regular mb-2">Full Name</label>
+                                <input type="text" id="name" class=" text-sm w-full p-3 border rounded-lg" placeholder="Enter your name" required>
+                            </div>
+                            <!-- Phone -->
+                            <div class="flex flex-col items-start col-span-2 sm:col-span-1">
+                                <label class="font-semibold text-sm poppins-regular mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class=" text-sm w-full p-3 border rounded-lg" placeholder="Enter your phone" required>
+                            </div>
+                            <!-- Email -->
+                            <div class="flex flex-col items-start col-span-2">
+                                <label class="font-semibold mb-2 text-sm poppins-regular">Email Address</label>
+                                <input type="email" id="email" class=" text-sm w-full p-3 border rounded-lg" placeholder="Enter your email" required>
+                            </div>
+                            <!-- City -->
+                            <div class="flex flex-col items-start col-span-2">
+                                <label class="font-semibold mb-2 text-sm poppins-regular">City</label>
+                                <input type="text" id="city" class=" text-sm w-full p-3 border rounded-lg" placeholder="Enter your city" required>
+                            </div>
+                            <!-- Message -->
+                            <div class="flex flex-col items-start col-span-2">
+                                <label class="font-semibold mb-2 text-sm poppins-regular">Tell Us About Your Interest</label>
+                                <textarea id="message" rows="4" class=" text-sm w-full p-3 border rounded-lg" placeholder="Why do you want to start a franchise?" required></textarea>
+                            </div>
+                            
+                            <!-- Submit Button -->
+                            <button type="submit" class="poppins-regular col-span-2 w-full bg-pink-500 text-white py-3 rounded-lg font-semibold shadow-md hover:bg-pink-700 transition-all">Submit Inquiry</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonial-section" class="py-32 overflow-hidden bg-[#f8f8f8]">
+        <div class="px-6 md:px-24 lg:px-52 xl:px-72">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-semibold text-pink-500 font-pacifico animate-bounce">What Our Clients Say</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto poppins-regular">
+                    Hear from our satisfied clients who have experienced exceptional results with our services.
+                </p>
+            </div>
+            <div class="tesitmonal_container gap-10 mt-10">
+                <div class="owl-carousel owl-theme w-full">
+                    <div class="item transition-transform duration-300">
+                        <div class="group testimonal_card sm:h-64 h-80 bg-white rounded-lg transition-all duration-300 p-6 md:p-10 cursor-pointer">
+                            <p class="text-black poppins-regular text-md transition-all duration-300">
+                                "The best ice cream experience ever! The flavors are rich, creamy, and absolutely delightful. The customer service is top-notch, and I always look forward to my next visit!"
+                            </p>
+                            <div class="user_detail_container flex gap-5 mt-5 items-center">
+                                <img src="{{asset('assets/img/testimonial-1.jpg')}}" alt="" class="!w-20">
+                                <div class="user_details">
+                                    <h5 class="text-pink-400 font-pacifico text-lg transition-all duration-300">Sophia Carter</h5>
+                                    <p class="text-black poppins-regular text-sm font-semibold">Ice Cream Lover</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item transition-transform duration-300">
+                        <div class="group testimonal_card sm:h-64 h-80 bg-white rounded-lg transition-all duration-300 p-6 md:p-10 cursor-pointer">
+                            <p class="text-black poppins-regular text-md transition-all duration-300">
+                                "Becoming a franchise owner was the best decision! The support, training, and brand reputation made it easy to succeed. My store is thriving, and customers love the premium ice cream!"
+                            </p>
+                            <div class="user_detail_container flex gap-5 mt-5 items-center">
+                                <img src="{{asset('assets/img/testimonial-2.jpg')}}" alt="" class="!w-20">
+                                <div class="user_details">
+                                    <h5 class="text-pink-400 font-pacifico text-lg transition-all duration-300">Michael Brown</h5>
+                                    <p class="text-black poppins-regular text-sm font-semibold">Franchise Owner</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item transition-transform duration-300">
+                        <div class="group testimonal_card sm:h-64 h-80 bg-white rounded-lg transition-all duration-300 p-6 md:p-10 cursor-pointer">
+                            <p class="text-black poppins-regular text-md transition-all duration-300">
+                                "The online ordering system is so convenient! I get my favorite ice creams delivered fresh and fast. The service is amazing, and they truly care about their customers."
+                            </p>
+                            <div class="user_detail_container flex gap-5 mt-5 items-center">
+                                <img src="{{asset('assets/img/testimonial-3.jpg')}}" alt="" class="!w-20">
+                                <div class="user_details">
+                                    <h5 class="text-pink-400 font-pacifico text-lg transition-all duration-300">Emma Wilson</h5>
+                                    <p class="text-black poppins-regular text-sm font-semibold">Happy Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     {{-- blog section --}}
     <section class="bg-[#fce4ec] py-32">
@@ -257,72 +448,61 @@
         </div>
     </section>
 
-
-    <!-- Testimonial Section -->
-    <section id="testimonial-section" class="py-32 overflow-hidden bg-gray-100">
-        <div class="px-6 md:px-24 lg:px-52 xl:px-72">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-semibold text-pink-500 font-pacifico animate-bounce">What Our Clients Say</h2>
-                <p class="text-gray-600 mt-4 max-w-2xl mx-auto poppins-regular">
-                    Hear from our satisfied clients who have experienced exceptional results with our services.
-                </p>
-            </div>
-            <div class="tesitmonal_container gap-10 mt-10">
-                <div class="owl-carousel owl-theme w-full">
-                    <div class="item transition-transform duration-300">
-                        <div class="group testimonal_card sm:h-64 h-80 bg-white rounded-lg transition-all duration-300 p-6 md:p-10 cursor-pointer">
-                            <p class="text-black poppins-regular text-md transition-all duration-300">
-                                "The best ice cream experience ever! The flavors are rich, creamy, and absolutely delightful. The customer service is top-notch, and I always look forward to my next visit!"
-                            </p>
-                            <div class="user_detail_container flex gap-5 mt-5 items-center">
-                                <img src="{{asset('assets/img/testimonial-1.jpg')}}" alt="" class="!w-20">
-                                <div class="user_details">
-                                    <h5 class="text-pink-400 font-pacifico text-lg transition-all duration-300">Sophia Carter</h5>
-                                    <p class="text-black poppins-regular text-sm font-semibold">Ice Cream Lover</p>
-                                </div>
+    <!--  Contact Us & Support Section -->
+    <section id="contact-support" class="bg-[#f8f8f8] py-20 px-5 md:px-10 lg:px-20">
+        <div class="container mx-auto">
+            <h2 class="text-2xl md:text-4xl font-semibold text-white-500 mb-5 font-pacifico animate-bounce text-pink-500 text-center">Contact Us</h2>
+            
+            <div class="w-full flex justify-center">
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-lg shadow-lg w-full md:w-[600px] lg:w-[700px]">
+                    <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-800 poppins-regular">Send us a message</h3>
+                    <form id="contact-form">
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="col-span-2 sm:col-span-1">
+                                <input type="text" id="name" class="w-full p-3 border rounded-lg poppins-regular text-sm" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-span-2 sm:col-span-1">
+                                <input type="text" id="mobile" class="w-full p-3 border rounded-lg poppins-regular text-sm" placeholder="Your Mobile" required>
+                            </div>
+                            <div class="col-span-2">
+                                <input type="email" id="email" class="w-full p-3 border rounded-lg poppins-regular text-sm" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-span-2">
+                                <textarea id="message" rows="4" class="w-full p-3 border rounded-lg poppins-regular text-sm" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="col-span-2">
+                                <button type="submit" class="w-full bg-pink-500 text-white py-3 rounded-lg font-semibold hover:bg-pink-600 transition-all">Send Message</button>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="item transition-transform duration-300">
-                        <div class="group testimonal_card sm:h-64 h-80 bg-white rounded-lg transition-all duration-300 p-6 md:p-10 cursor-pointer">
-                            <p class="text-black poppins-regular text-md transition-all duration-300">
-                                "Becoming a franchise owner was the best decision! The support, training, and brand reputation made it easy to succeed. My store is thriving, and customers love the premium ice cream!"
-                            </p>
-                            <div class="user_detail_container flex gap-5 mt-5 items-center">
-                                <img src="{{asset('assets/img/testimonial-2.jpg')}}" alt="" class="!w-20">
-                                <div class="user_details">
-                                    <h5 class="text-pink-400 font-pacifico text-lg transition-all duration-300">Michael Brown</h5>
-                                    <p class="text-black poppins-regular text-sm font-semibold">Franchise Owner</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="item transition-transform duration-300">
-                        <div class="group testimonal_card sm:h-64 h-80 bg-white rounded-lg transition-all duration-300 p-6 md:p-10 cursor-pointer">
-                            <p class="text-black poppins-regular text-md transition-all duration-300">
-                                "The online ordering system is so convenient! I get my favorite ice creams delivered fresh and fast. The service is amazing, and they truly care about their customers."
-                            </p>
-                            <div class="user_detail_container flex gap-5 mt-5 items-center">
-                                <img src="{{asset('assets/img/testimonial-3.jpg')}}" alt="" class="!w-20">
-                                <div class="user_details">
-                                    <h5 class="text-pink-400 font-pacifico text-lg transition-all duration-300">Emma Wilson</h5>
-                                    <p class="text-black poppins-regular text-sm font-semibold">Happy Customer</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
+                
+                {{-- <!-- FAQs Section -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Frequently Asked Questions</h3>
+                    <div class="space-y-4">
+                        <div class="faq-item border-b pb-2 cursor-pointer">
+                            <h4 class="faq-question font-semibold text-gray-700 flex justify-between items-center">How can I track my order? <i class="ri-arrow-down-s-line"></i></h4>
+                            <p class="faq-answer text-gray-600 hidden">You can track your order from your account dashboard under 'My Orders' section.</p>
+                        </div>
+                        <div class="faq-item border-b pb-2 cursor-pointer">
+                            <h4 class="faq-question font-semibold text-gray-700 flex justify-between items-center">Do you offer home delivery? <i class="ri-arrow-down-s-line"></i></h4>
+                            <p class="faq-answer text-gray-600 hidden">Yes, we provide home delivery in selected locations.</p>
+                        </div>
+                        <div class="faq-item border-b pb-2 cursor-pointer">
+                            <h4 class="faq-question font-semibold text-gray-700 flex justify-between items-center">How to apply for a franchise? <i class="ri-arrow-down-s-line"></i></h4>
+                            <p class="faq-answer text-gray-600 hidden">You can apply for a franchise through our Franchise Inquiry Form.</p>
+                        </div>
+                    </div>
+                </div> --}}
             </div>
         </div>
     </section>
 
-      
-      
+    @include('frontend.partials.footer')
 
 
-    <section class="py-52"></section>
     <!-- jQuery and Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
