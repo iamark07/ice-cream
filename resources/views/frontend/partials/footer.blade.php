@@ -1,5 +1,5 @@
 <!-- Ice Cream Website Footer -->
-<footer class="bg-gradient-to-r from-pink-600 to-yellow-600 text-white py-10 px-6 md:px-10 poppins-regular">
+<footer class="bg-gradient-to-r from-blue-400 to-purple-500 text-white py-10 px-6 md:px-10 poppins-regular">
     <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
         <!-- Company Info -->
         <div class="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-1 flex flex-col items-center lg:items-start">

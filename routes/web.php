@@ -5,6 +5,10 @@ Route::get('/', function () {
     return view('frontend.home');
 })->name('home');
 
+Route::get('/product', function () {
+    return view('frontend.product');
+})->name('product');
+
 Route::get('/about', function () {
     return view('frontend.about');
 })->name('about');
@@ -40,6 +44,10 @@ Route::get('/register', function () {
 Route::get('/cart', function () {
     return view('frontend.cart');
 })->name('cart');
+
+Route::get('/wishlist', function () {
+    return view('frontend.wishlist');
+})->name('wishlist');
 
 Route::get('/shop', function () {
     return view('frontend.shop');

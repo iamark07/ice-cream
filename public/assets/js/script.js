@@ -165,3 +165,70 @@ document.querySelectorAll(".filter-btn").forEach(button => {
     });
 });
 
+
+
+
+// flavors scroll animation feature
+document.addEventListener("DOMContentLoaded", function () {
+    const flavorScroll = document.getElementById("flavorScroll");
+    const scrollLeft = document.getElementById("scrollLeft");
+    const scrollRight = document.getElementById("scrollRight");
+
+    let isDown = false;
+    let startX;
+    let scrollLeftPosition;
+
+    // Drag-to-scroll functionality
+    flavorScroll.addEventListener("mousedown", (e) => {
+        isDown = true;
+        startX = e.pageX - flavorScroll.offsetLeft;
+        scrollLeftPosition = flavorScroll.scrollLeft;
+    });
+
+    flavorScroll.addEventListener("mouseleave", () => {
+        isDown = false;
+    });
+
+    flavorScroll.addEventListener("mouseup", () => {
+        isDown = false;
+    });
+
+    flavorScroll.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - flavorScroll.offsetLeft;
+        const walk = (x - startX) * 2;
+        flavorScroll.scrollLeft = scrollLeftPosition - walk;
+    });
+
+    // Scroll buttons functionality (scrolls one card at a time)
+    const scrollAmount = 150; // Adjust based on card width
+    scrollLeft.addEventListener("click", () => {
+        flavorScroll.scrollLeft -= scrollAmount;
+    });
+
+    scrollRight.addEventListener("click", () => {
+        flavorScroll.scrollLeft += scrollAmount;
+    });
+});
+
+
+
+
+// review and rating feature 
+// Open the modal
+document.getElementById('openReviewModal').addEventListener('click', function() {
+    document.getElementById('reviewModal').classList.remove('hidden');
+});
+
+// Close the modal when clicking outside of it
+document.getElementById('reviewModal').addEventListener('click', function(event) {
+    if (event.target === document.getElementById('reviewModal')) {
+        document.getElementById('reviewModal').classList.add('hidden');
+    }
+});
+
+// Close the modal when clicking the close button
+document.getElementById('closeModal').addEventListener('click', function() {
+    document.getElementById('reviewModal').classList.add('hidden');
+});

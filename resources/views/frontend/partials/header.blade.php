@@ -1,5 +1,5 @@
 <!-- Header Section -->
-<header class="fixed z-40 w-full bg-gradient-to-r from-pink-400/80 via-blue-300/80 to-pink-500/80 shadow-lg backdrop-blur-lg overflow-hidden">
+<header class="fixed z-40 w-full bg-gradient-to-r from-pink-500/80 via-blue-300/80 to-pink-500/80 shadow-lg backdrop-blur-lg overflow-hidden">
     <div class="flex justify-between items-center px-6 md:px-10 py-4">
         <!-- Left Section: Social Icons -->
         <div class="animate hidden lg:flex gap-6">
@@ -25,8 +25,13 @@
 
         <!-- Right Section: Cart, Login, Multi-Language & Currency Selector -->
         <div class="animate hidden lg:flex gap-6 items-center">
-            <i class="search_icon ri-search-line hover:text-pink-500 text-white text-xl cursor-pointer" title="Search"></i>
-            <a href="{{ route('cart') }}" class="text-lg transition"><i class="ri-shopping-cart-line hover:text-pink-500 text-white text-xl" title="Cart"></i></a>
+            <i class="search_icon ri-search-line text-white text-xl cursor-pointer" title="Search"></i>
+            <a href="{{ route('wishlist') }}" title="Wishlist" class="text-lg transition relative">
+                <span class="text-[10px] bg-white flex justify-center items-center w-5 h-5 rounded-full absolute -top-2 -right-2 font-semibold">1</span><i class="ri-heart-2-line text-white text-xl"></i>
+            </a>
+            <a href="{{ route('cart') }}" title="Cart" class="text-lg transition relative">
+                <span class="text-[10px] bg-white flex justify-center items-center w-5 h-5 rounded-full absolute -top-2 -right-2 font-semibold">2</span><i class="ri-shopping-cart-line text-white text-xl"></i>
+            </a>
 
             <!-- Profile Dropdown -->
             <div class="relative">
@@ -72,9 +77,13 @@
         </div>
 
         <!-- Hamburger and search Icon for Mobile -->
-        <div class="flex lg:hidden items-center gap-6">
-            <i class="search_icon ri-search-line hover:text-pink-500 text-white text-xl cursor-pointer animate" title="Search"></i>
-            <div id="menu-toggle" class="animate text-2xl text-white"><i class="ri-menu-line"></i></div>
+        <div class="flex lg:hidden items-center gap-6 animate">
+            <i class="search_icon ri-search-line hover:text-pink-500 text-white text-xl cursor-pointer" title="Search"></i>
+            <a href="{{ route('cart') }}"  title="Cart" class="text-lg transition relative">
+                <span class="text-[10px] bg-white flex justify-center items-center w-5 h-5 rounded-full absolute -top-2 -right-2 font-semibold">2</span>
+                <i class="ri-shopping-cart-line hover:text-pink-500 text-white text-xl"></i>
+            </a>
+            <div id="menu-toggle" class=" text-2xl text-white"><i class="ri-menu-line"></i></div>
         </div>
     </div>
 </header>
@@ -110,6 +119,7 @@
             <a href="{{ route('about') }}" class="hover:text-pink-500 transition"><i class="ri-information-line me-2 text-xl"></i>About</a>
             <a href="{{ route('shop') }}" class="hover:text-pink-500 transition"><i class="ri-store-line me-2 text-xl"></i>Shop</a>
             <a href="{{ route('flavors') }}" class="hover:text-pink-500 transition"><i class="ri-file-list-3-line me-2 text-xl"></i>Flavors</a>
+            <a href="{{ route('wishlist') }}" class="hover:text-pink-500 transition"><i class="ri-heart-2-line me-2 text-xl"></i>Wishlist</a>
             <a href="{{ route('cart') }}" class="hover:text-pink-500 transition"><i class="ri-shopping-cart-line me-2 text-xl"></i>Cart</a>
             <!-- Profile Dropdown -->
             <div class="relative">

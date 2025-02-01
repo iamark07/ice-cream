@@ -38,6 +38,108 @@
         </div>
     </section>
 
+    <section class="py-16 bg-[#f8f8f8] poppins-regular">
+        <div class="px-5 md:px-10">
+            <h2 class="text-2xl md:text-4xl font-semibold text-white-500 mb-10 font-pacifico animate-bounce text-pink-500 text-center">
+                Popular Ice Cream Flavors
+            </h2>
+    
+            <div class="relative">
+                <!-- Left Scroll Button -->
+                <button id="scrollLeft" class="absolute left-0 top-1/2 -translate-y-1/2 bg-pink-500 text-white grid place-items-center w-10 h-10 md:w-14 md:h-14 rounded-full shadow-md z-10 hover:bg-pink-600 transition">
+                    <i class="ri-arrow-left-s-line text-2xl"></i>
+                </button>
+    
+                <!-- Scrollable Flavors Container -->
+                <div id="flavorScroll" class="flex gap-1 md:gap-5 overflow-x-auto px-5 py-4 cursor-grab active:cursor-grabbing scroll-smooth scrollbar-hide">
+                    
+                    <!-- Single Flavor Cards -->
+                    <a href="">
+                        <div class="min-w-[120px] sm:min-w-[140px] flex flex-col items-center">
+                            <div class="bg-white rounded-full shadow-lg grid place-items-center p-5 sm:p-6">
+                                <img src="{{ asset('assets/img/trending.png') }}" alt="Chocolate" class="w-16 sm:w-20 h-16 sm:h-20 rounded-full object-cover">
+                            </div>
+                            <p class="mt-2 text-gray-700 text-sm font-semibold md:text-base text-nowrap">Chocolate</p>
+                        </div>
+                    </a>
+    
+                    <a href="">
+                        <div class="min-w-[120px] sm:min-w-[140px] flex flex-col items-center">
+                            <div class="bg-white rounded-full shadow-lg grid place-items-center p-5 sm:p-6">
+                                <img src="{{ asset('assets/img/ice-cream-1.png') }}" alt="Vanilla" class="w-16 sm:w-20 h-16 sm:h-20 rounded-full object-cover">
+                            </div>
+                            <p class="mt-2 text-gray-700 text-sm font-semibold md:text-base text-nowrap">Vanilla</p>
+                        </div>
+                    </a>
+    
+                    <a href="">
+                        <div class="min-w-[120px] sm:min-w-[140px] flex flex-col items-center">
+                            <div class="bg-white rounded-full shadow-lg grid place-items-center p-5 sm:p-6">
+                                <img src="{{ asset('assets/img/trending.png') }}" alt="Strawberry" class="w-16 sm:w-20 h-16 sm:h-20 rounded-full object-cover">
+                            </div>
+                            <p class="mt-2 text-gray-700 text-sm font-semibold md:text-base text-nowrap">Strawberry</p>
+                        </div>
+                    </a>
+    
+                    <a href="">
+                        <div class="min-w-[120px] sm:min-w-[140px] flex flex-col items-center">
+                            <div class="bg-white rounded-full shadow-lg grid place-items-center p-5 sm:p-6">
+                                <img src="{{ asset('assets/img/ice-cream-1.png') }}" alt="Mango" class="w-16 sm:w-20 h-16 sm:h-20 rounded-full object-cover">
+                            </div>
+                            <p class="mt-2 text-gray-700 text-sm font-semibold md:text-base text-nowrap">Mango</p>
+                        </div>
+                    </a>
+    
+                    <a href="">
+                        <div class="min-w-[120px] sm:min-w-[140px] flex flex-col items-center">
+                            <div class="bg-white rounded-full shadow-lg grid place-items-center p-5 sm:p-6">
+                                <img src="{{ asset('assets/img/trending.png') }}" alt="Pistachio" class="w-16 sm:w-20 h-16 sm:h-20 rounded-full object-cover">
+                            </div>
+                            <p class="mt-2 text-gray-700 text-sm font-semibold md:text-base text-nowrap">Pistachio</p>
+                        </div>
+                    </a>
+    
+                    <a href="">
+                        <div class="min-w-[120px] sm:min-w-[140px] flex flex-col items-center">
+                            <div class="bg-white rounded-full shadow-lg grid place-items-center p-5 sm:p-6">
+                                <img src="{{ asset('assets/img/ice-cream-1.png') }}" alt="Cookies & Cream" class="w-16 sm:w-20 h-16 sm:h-20 rounded-full object-cover">
+                            </div>
+                            <p class="mt-2 text-gray-700 text-sm font-semibold md:text-base text-nowrap">Cookies & Cream</p>
+                        </div>
+                    </a>
+    
+                    <a href="">
+                        <div class="min-w-[120px] sm:min-w-[140px] flex flex-col items-center">
+                            <div class="bg-white rounded-full shadow-lg grid place-items-center p-5 sm:p-6">
+                                <img src="{{ asset('assets/img/trending.png') }}" alt="Blueberry" class="w-16 sm:w-20 h-16 sm:h-20 rounded-full object-cover">
+                            </div>
+                            <p class="mt-2 text-gray-700 text-sm font-semibold md:text-base text-nowrap">Blueberry</p>
+                        </div>
+                    </a>
+        
+                    <a href="">
+                        <div class="min-w-[120px] sm:min-w-[140px] flex flex-col items-center">
+                            <div class="bg-white rounded-full shadow-lg grid place-items-center p-5 sm:p-6">
+                                <img src="{{ asset('assets/img/ice-cream-1.png') }}" alt="Mint Chocolate" class="w-16 sm:w-20 h-16 sm:h-20 rounded-full object-cover">
+                            </div>
+                            <p class="mt-2 text-gray-700 text-sm font-semibold md:text-base text-nowrap">Mint Chocolate</p>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Right Scroll Button -->
+                <button id="scrollRight" class="absolute right-0 top-1/2 -translate-y-1/2 bg-pink-500 text-white grid place-items-center w-10 h-10 md:w-14 md:h-14 rounded-full shadow-md z-10 hover:bg-pink-600 transition">
+                    <i class="ri-arrow-right-s-line text-2xl"></i>
+                </button>
+            </div>
+    
+            <!-- More Flavors Button -->
+            <div class="text-center mt-6">
+                <a href="{{ route('flavors') }}" class="bg-pink-500 text-white py-2 px-6 rounded-md hover:bg-pink-600 transition">More Flavors</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Enhanced Brand Story Section -->
     <section id="brand-story" class="bg-gradient-to-r from-pink-500 to-yellow-400 py-28 md:py-20 text-center text-white relative overflow-hidden">
         <div class="container mx-auto px-6 md:px-16 relative z-10">
@@ -66,29 +168,35 @@
     </section>
 
     <!-- Trending Products Section -->
-    <section id="trending-products" class="py-20 bg-[#f8f8f8] text-center">
+    <section id="trending-products" class="py-20 bg-[#f8f8f8] text-center poppins-regular">
         <div class="mx-auto px-5 md:px-10 xl:px-32">
             <h2 class="text-2xl md:text-4xl font-semibold text-pink-500 mb-20 font-pacifico animate-bounce">Trending Products</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-8">
                 <!-- Product Cards -->
-                <div class="bg-white p-6 shadow-lg text-center rounded-lg transform transition duration-300 hover:scale-105">
-                    <img src="{{ asset('assets/img/trending.png')}}" class="w-full h-56 object-cover rounded-md" alt="Chocolate Ice Cream">
-                    <h3 class="text-xl font-semibold text-gray-800 mt-4">Chocolate Ice Cream</h3>
-                    <p class="text-pink-700 font-semibold">&#8377;5.99</p>
-                    <button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
-                </div>
-                <div class="bg-white p-6 shadow-lg text-center rounded-lg transform transition duration-300 hover:scale-105">
-                    <img src="{{ asset('assets/img/trending.png')}}" class="w-full h-56 object-cover rounded-md" alt="Chocolate Ice Cream">
-                    <h3 class="text-xl font-semibold text-gray-800 mt-4">Chocolate Ice Cream</h3>
-                    <p class="text-pink-700 font-semibold">&#8377;5.99</p>
-                    <button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
-                </div>
-                <div class="bg-white p-6 shadow-lg text-center rounded-lg transform transition duration-300 hover:scale-105">
-                    <img src="{{ asset('assets/img/trending.png')}}" class="w-full h-56 object-cover rounded-md" alt="Chocolate Ice Cream">
-                    <h3 class="text-xl font-semibold text-gray-800 mt-4">Chocolate Ice Cream</h3>
-                    <p class="text-pink-700 font-semibold">&#8377;5.99</p>
-                    <button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>   Add to Cart</button>
-                </div>
+                <a href="">
+                    <div class="bg-white p-6 shadow-lg text-center rounded-lg transform transition duration-300 hover:scale-105">
+                        <img src="{{ asset('assets/img/trending.png')}}" class="w-full h-56 object-cover rounded-md" alt="Chocolate Ice Cream">
+                        <h3 class="text-xl font-semibold text-gray-800 mt-4">Chocolate Ice Cream</h3>
+                        <p class="text-pink-700 font-semibold text-lg">&#8377; 5.99</p>
+                        <button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
+                    </div>
+                </a>
+                <a href="">    
+                    <div class="bg-white p-6 shadow-lg text-center rounded-lg transform transition duration-300 hover:scale-105">
+                        <img src="{{ asset('assets/img/trending.png')}}" class="w-full h-56 object-cover rounded-md" alt="Chocolate Ice Cream">
+                        <h3 class="text-xl font-semibold text-gray-800 mt-4">Chocolate Ice Cream</h3>
+                        <p class="text-pink-700 font-semibold text-lg">&#8377; 5.99</p>
+                        <button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
+                    </div>
+                </a>
+                <a href="">    
+                    <div class="bg-white p-6 shadow-lg text-center rounded-lg transform transition duration-300 hover:scale-105">
+                        <img src="{{ asset('assets/img/trending.png')}}" class="w-full h-56 object-cover rounded-md" alt="Chocolate Ice Cream">
+                        <h3 class="text-xl font-semibold text-gray-800 mt-4">Chocolate Ice Cream</h3>
+                        <p class="text-pink-700 font-semibold text-lg">&#8377; 5.99</p>
+                        <button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>   Add to Cart</button>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -142,24 +250,30 @@
             <!-- Product Grid -->
             <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Static Products -->
-                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <a href="{{ route('product')}}">
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
                     <img src="{{asset('assets/img/portfolio-1.jpg')}}" alt="Chocolate Bliss" class="w-full h-48 object-cover rounded-md mb-4">
                     <h3 class="text-xl font-bold">Chocolate Bliss</h3>
-                    <p class="text-lg text-gray-600">&#8377; 5.99</p>
+                    <p class="text-pink-700 font-semibold text-lg">&#8377; 5.99</p>
                     <button class="mt-4 bg-pink-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    </div>
+                </a>
+                <a href="{{ route('product')}}">
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
                     <img src="{{asset('assets/img/portfolio-2.jpg')}}" alt="Strawberry Delight" class="w-full h-48 object-cover rounded-md mb-4">
                     <h3 class="text-xl font-bold">Strawberry Delight</h3>
-                    <p class="text-lg text-gray-600">&#8377; 4.99</p>
+                    <p class="text-pink-700 font-semibold text-lg">&#8377; 4.99</p>
                     <button class="mt-4 bg-pink-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    </div>
+                </a>
+                <a href="{{ route('product')}}">
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
                     <img src="{{asset('assets/img/portfolio-3.jpg')}}" alt="Nutty Caramel" class="w-full h-48 object-cover rounded-md mb-4">
                     <h3 class="text-xl font-bold">Nutty Caramel</h3>
-                    <p class="text-lg text-gray-600">&#8377; 6.49</p>
+                    <p class="text-pink-700 font-semibold text-lg">&#8377; 6.49</p>
                     <button class="mt-4 bg-pink-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
-                </div>
+                    </div>
+                </a>
             </div>
     
             <!-- Pagination -->
@@ -177,8 +291,65 @@
         </div>
     </section>
 
+    {{-- subscription plan --}}
+    <section class="py-16 bg-[#f8f8f8] poppins-regular">
+        <div class="container mx-auto px-5 md:px-10">
+            <h2 class="text-2xl md:text-4xl font-semibold text-white-500 mb-10 font-pacifico animate-bounce text-pink-500 text-center">Choose Your Subscription Plan</h2>
+    
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Weekly Plan -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-2xl transition flex flex-col items-center">
+                    <div class="bg-pink-500 shadow-md grid place-items-center w-20 h-20 rounded-full">  
+                        <i class="ri-calendar-2-line text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mt-4">Weekly Plan</h3>
+                    <p class="text-gray-600 mt-2">Get fresh ice cream delivered every week!</p>
+                    <p class="text-3xl font-bold text-pink-500 mt-4">&#8377; 149 / week</p>
+                    <ul class="mt-4 space-y-2 text-gray-700 text-sm flex flex-col items-start">
+                        <li><i class="ri-check-line text-pink-500"></i> 4 Ice Cream Flavors per week</li>
+                        <li><i class="ri-check-line text-pink-500"></i> Free Delivery</li>
+                        <li><i class="ri-check-line text-pink-500"></i> Cancel Anytime</li>
+                    </ul>
+                    <button class="mt-6 bg-pink-500 text-white py-2 px-6 rounded-md hover:bg-pink-700 transition duration-200">Subscribe</button>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-2xl transition flex flex-col items-center">
+                    <div class="bg-pink-500 shadow-md grid place-items-center w-20 h-20 rounded-full">  
+                        <i class="ri-vip-crown-line text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mt-4">Premium Plan</h3>
+                    <p class="text-gray-600 mt-2">Exclusive premium flavors & extra perks!</p>
+                    <p class="text-3xl font-bold text-pink-500 mt-4">&#8377; 349 / month</p>
+                    <ul class="mt-4 space-y-2 text-gray-700 text-sm flex flex-col items-start">
+                        <li><i class="ri-check-line text-pink-500"></i> 20 Premium Flavors per month</li>
+                        <li><i class="ri-check-line text-pink-500"></i> Free Delivery & Extra Gifts</li>
+                        <li><i class="ri-check-line text-pink-500"></i> Priority Customer Support</li>
+                    </ul>
+                    <button class="mt-6 bg-pink-500 text-white py-2 px-6 rounded-md hover:bg-pink-700 transition duration-200">Subscribe</button>
+                </div>
+    
+                <!-- Monthly Plan -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-2xl transition flex flex-col items-center">
+                    <div class="bg-pink-500 shadow-md grid place-items-center w-20 h-20 rounded-full">  
+                        <i class="ri-calendar-event-line text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mt-4">Monthly Plan</h3>
+                    <p class="text-gray-600 mt-2">Enjoy delicious ice cream every month!</p>
+                    <p class="text-3xl font-bold text-pink-500 mt-4">&#8377; 449 / month</p>
+                    <ul class="mt-4 space-y-2 text-gray-700 text-sm flex flex-col items-start">
+                        <li><i class="ri-check-line text-pink-500"></i> 16 Ice Cream Flavors per month</li>
+                        <li><i class="ri-check-line text-pink-500"></i> Free Delivery</li>
+                        <li><i class="ri-check-line text-pink-500"></i> Cancel Anytime</li>
+                    </ul>
+                    <button class="mt-6 bg-pink-500 text-white py-2 px-6 rounded-md hover:bg-pink-700 transition duration-200">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>    
+
     <!-- Store Locator Section -->
-    <section id="store-locator" class="bg-gradient-to-r from-green-400 to-blue-500 py-20 px-6 md:px-16 lg:px-24 text-white text-center poppins-regular">
+    <section id="store-locator" class="bg-gradient-to-r from-blue-400 to-purple-500 py-20 px-6 md:px-16 lg:px-24 text-white text-center poppins-regular">
         <div class="container mx-auto">
             <h2 class="text-2xl md:text-4xl font-semibold text-white-500 mb-5 font-pacifico animate-bounce">📍 Find a Store Near You! 📍</h2>
             <p class="md:text-xl mb-8">Locate your nearest franchise outlet and enjoy your favorite ice cream anytime, anywhere.</p>
@@ -206,7 +377,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
 
     <!-- Ice Cream Gallery Section -->
     <section class="py-24">
@@ -331,7 +502,7 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section id="testimonial-section" class="py-32 overflow-hidden bg-[#f8f8f8]">
+    <section id="testimonial-section" class="py-32 overflow-hidden bg-[#f8f8f8] poppins-regular">
         <div class="px-6 md:px-24 lg:px-52 xl:px-72">
             <div class="text-center mb-12">
                 <h2 class="text-4xl font-semibold text-pink-500 font-pacifico animate-bounce">What Our Clients Say</h2>
@@ -351,6 +522,13 @@
                                 <div class="user_details">
                                     <h5 class="text-pink-400 font-pacifico text-lg transition-all duration-300">Sophia Carter</h5>
                                     <p class="text-black poppins-regular text-sm font-semibold">Ice Cream Lover</p>
+                                    <div class="flex gap-1">
+                                        <i class="ri-star-fill text-yellow-400 text-lg"></i>
+                                        <i class="ri-star-fill text-yellow-400 text-lg"></i>
+                                        <i class="ri-star-fill text-yellow-400 text-lg"></i>
+                                        <i class="ri-star-fill text-yellow-400 text-lg"></i>
+                                        <i class="ri-star-half-line text-yellow-400 text-lg"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -366,6 +544,13 @@
                                 <div class="user_details">
                                     <h5 class="text-pink-400 font-pacifico text-lg transition-all duration-300">Michael Brown</h5>
                                     <p class="text-black poppins-regular text-sm font-semibold">Franchise Owner</p>
+                                    <div class="flex gap-1">
+                                        <i class="ri-star-fill text-yellow-400 text-lg"></i>
+                                        <i class="ri-star-fill text-yellow-400 text-lg"></i>
+                                        <i class="ri-star-fill text-yellow-400 text-lg"></i>
+                                        <i class="ri-star-fill text-yellow-400 text-lg"></i>
+                                        <i class="ri-star-half-line text-yellow-400 text-lg"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -381,10 +566,59 @@
                                 <div class="user_details">
                                     <h5 class="text-pink-400 font-pacifico text-lg transition-all duration-300">Emma Wilson</h5>
                                     <p class="text-black poppins-regular text-sm font-semibold">Happy Customer</p>
+                                    <div class="flex gap-1">
+                                        <i class="ri-star-fill text-yellow-400 text-lg"></i>
+                                        <i class="ri-star-fill text-yellow-400 text-lg"></i>
+                                        <i class="ri-star-fill text-yellow-400 text-lg"></i>
+                                        <i class="ri-star-fill text-yellow-400 text-lg"></i>
+                                        <i class="ri-star-half-line text-yellow-400 text-lg"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <!-- Button to Open Review Modal -->
+            <div class="mt-8 w-full">
+                <button id="openReviewModal" class="w-full bg-pink-500 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-pink-700 transition-all duration-300">
+                    Share Your Review
+                </button>
+            </div>
+        </div>
+        <!-- Review Modal (Popup) -->
+        <div id="reviewModal" class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-md z-50 hidden">
+            <div class="flex justify-center items-center min-h-screen">
+                <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg relative">
+                    <button id="closeModal" class="absolute top-4 right-4 text-gray-600 hover:text-red-500">
+                        <i class="ri-close-circle-fill text-2xl"></i>
+                    </button>
+                    <h3 class="text-3xl font-bold mb-6 text-center text-gray-800">Submit Your Review</h3>
+
+                    <!-- Review Form -->
+                    <form>
+                        <div class="mb-4">
+                            <label for="rating" class="text-gray-700 font-medium text-sm">Rating</label>
+                            <select class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-pink-500 text-sm" required>
+                                <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                                <option value="4">⭐⭐⭐⭐ - Good</option>
+                                <option value="3">⭐⭐⭐ - Average</option>
+                                <option value="2">⭐⭐ - Poor</option>
+                                <option value="1">⭐ - Bad</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="review" class="text-gray-700 font-medium text-sm">Your Review</label>
+                            <textarea id="review" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-pink-500 text-sm" rows="4" placeholder="Write your feedback here..."></textarea>
+                        </div>
+                        <div class="mb-4">
+                            <input type="file" class="w-full p-3 bg-pink-500 text-white text-sm">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-pink-500 text-white px-8 py-3 rounded-md hover:bg-pink-600 transition-all duration-300 text-sm">Submit Review</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -500,6 +734,7 @@
         </div>
     </section>
 
+    {{-- include footer --}}
     @include('frontend.partials.footer')
 
 
