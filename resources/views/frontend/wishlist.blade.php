@@ -1,9 +1,6 @@
-<!-- Include Head -->
-@include('frontend.partials.head')
+@extends('frontend.partials.app')
 
-<body class="text-gray-800 font-roboto overflow-x-hidden">
-    <!-- Include Header -->
-    @include('frontend.partials.header')
+@section('content')
 
     <!-- Wishlist Section -->
     <section class="py-16 bg-gray-50 poppins-regular pt-32">
@@ -74,9 +71,4 @@
         </div>
     </section>
 
-
-    <!-- Header Section JS -->
-    <script src="{{ asset('assets/js/header.js') }}"></script>
-</body>
-
-</html>
+@endsection 

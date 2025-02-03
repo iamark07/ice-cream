@@ -16,20 +16,20 @@
         <div class="col-span-1 sm:col-span-2 md:col-span-1">
             <h3 class="text-xl font-semibold">Quick Links</h3>
             <ul class="mt-3 space-y-2">
-                <li><a href="about.html" class="hover:text-gray-300 text-sm transition">Home</a></li>
-                <li><a href="about.html" class="hover:text-gray-300 text-sm transition">About Us</a></li>
-                <li><a href="shop.html" class="hover:text-gray-300 text-sm transition">Services</a></li>
-                <li><a href="shop.html" class="hover:text-gray-300 text-sm transition">Shop</a></li>
-                <li><a href="shop.html" class="hover:text-gray-300 text-sm transition">Flavors</a></li>
+                <li><a href="{{ route('home')}}" class="hover:text-gray-300 text-sm transition">Home</a></li>
+                <li><a href="{{ route('about')}}" class="hover:text-gray-300 text-sm transition">About Us</a></li>
+                <li><a href="{{ route('services')}}" class="hover:text-gray-300 text-sm transition">Services</a></li>
+                <li><a href="{{ route('shop')}}" class="hover:text-gray-300 text-sm transition">Shop</a></li>
+                <li><a href="{{ route('flavors')}}" class="hover:text-gray-300 text-sm transition">Flavors</a></li>
             </ul>
         </div>
         <!-- Quick Links -->
         <div class="col-span-1 sm:col-span-2 md:col-span-1">
             <h3 class="text-xl font-semibold">Support Links</h3>
             <ul class="mt-3 space-y-2">
-                <li><a href="contact.html" class="hover:text-gray-300 text-sm transition">Franchise inquery</a></li>
-                <li><a href="contact.html" class="hover:text-gray-300 text-sm transition">Contact</a></li>
-                <li><a href="faq.html" class="hover:text-gray-300 text-sm transition">FAQs</a></li>
+                <li><a href="{{ route('franchise')}}" class="hover:text-gray-300 text-sm transition">Franchise inquery</a></li>
+                <li><a href="{{ route('contact')}}" class="hover:text-gray-300 text-sm transition">Contact</a></li>
+                <li><a href="{{ route('faqs')}}" class="hover:text-gray-300 text-sm transition">FAQs</a></li>
             </ul>
         </div>
         

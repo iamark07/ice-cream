@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    @include('frontend.partials.head')
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
-</head>
-<body class="text-gray-800 font-roboto overflow-x-hidden poppins-regular">
-    @include('frontend.partials.header')
+@extends('frontend.partials.app')
+
+@section('content')
     
     <!-- Breadcrumb Section -->
     <section class="relative w-full bg-cover bg-center" style="background-image: url('assets/img/header.jpg');">
         <div class="pt-48 pb-28 md:pt-56 md:pb-32 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white">
-            <h2 class="text-3xl md:text-4xl font-bold">Our Shop</h2>
+            <h2 class="text-3xl md:text-5xl font-bold font-pacifico">Our Shop</h2>
             <p class="mt-2 md:text-lg"><a href="{{ route('home') }}" class="text-gray-300 hover:text-white">Home</a> / Shop</p>
         </div>
     </section>
@@ -38,7 +33,7 @@
     </section>
 
     <!-- Visit Us Section -->
-    <section class="bg-gradient-to-r from-pink-500 to-yellow-500 text-white py-16 px-6 text-center">
+    <section class="bg-gradient-to-r from-pink-500 to-yellow-500 text-white py-16 px-6 text-center poppins-regular">
         <h2 class="text-3xl font-bold">Visit Our Shop Today!</h2>
         <p class="mt-4 text-lg">Come and taste the magic of our handcrafted ice creams.</p>
         <a href="/contact" class="mt-6 inline-block bg-white text-pink-600 px-6 py-3 rounded-lg font-semibold">Get Directions</a>
@@ -69,7 +64,4 @@
         </div>
     </section>
     
-    @include('frontend.partials.footer')
-    <script src="{{ asset('assets/js/header.js') }}"></script>
-</body>
-</html>
+@endsection 

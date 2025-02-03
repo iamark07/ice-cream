@@ -1,12 +1,10 @@
-<!-- Include Head -->
-@include('frontend.partials.head')
+@extends('frontend.partials.app')
 
-<body class="text-gray-800 font-roboto overflow-x-hidden">
+@section('content')
+
     {{-- hero section --}}
     <section class="hero_section relative w-full h-[100dvh]">
-        <!-- Header Section -->
-        <!-- Include Header -->
-        @include('frontend.partials.header')
+
         <!-- Dark Overlay -->
         <div class="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-10"></div>
         <!-- Background Images -->
@@ -734,20 +732,4 @@
         </div>
     </section>
 
-    {{-- include footer --}}
-    @include('frontend.partials.footer')
-
-
-    <!-- jQuery and Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-
-    {{-- header section js --}}
-    <script src="{{ asset('assets/js/header.js') }}"></script>
-    <script src="{{ asset('assets/js/script.js') }}"></script>
-</body>
-
-</html>
+@endsection 

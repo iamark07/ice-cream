@@ -1,9 +1,6 @@
-<!-- Include Head -->
-@include('frontend.partials.head')
+@extends('frontend.partials.app')
 
-<body class="text-gray-800 font-roboto overflow-x-hidden">
-    <!-- Include Header -->
-    @include('frontend.partials.header')
+@section('content')
 
     <!-- Product Details Section -->
     <section class="py-16 bg-white poppins-regular pt-32">
@@ -138,14 +135,7 @@
                 </button>
             </form>
         </div>
-    </div>
-
-
-    <!-- Include Footer -->
-    @include('frontend.partials.footer')
-
-    <!-- Header Section JS -->
-    <script src="{{ asset('assets/js/header.js') }}"></script>    
+    </div> 
 
     <!-- Review Modal Script -->
     <script>
@@ -173,6 +163,4 @@
         });
     </script>
     
-</body>
-
-</html>
+    @endsection 

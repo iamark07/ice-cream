@@ -17,6 +17,10 @@ Route::get('/services', function () {
     return view('frontend.services');
 })->name('services');
 
+Route::get('/franchise', function () {
+    return view('frontend.franchise');
+})->name('franchise');
+
 Route::get('/flavors', function () {
     return view('frontend.flavors');
 })->name('flavors');
@@ -24,6 +28,10 @@ Route::get('/flavors', function () {
 Route::get('/contact', function () {
     return view('frontend.contact');
 })->name('contact');
+
+Route::get('/faqs', function () {
+    return view('frontend.faqs');
+})->name('faqs');
 
 Route::get('/checkout', function () {
     return view('frontend.checkout');

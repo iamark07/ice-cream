@@ -1,9 +1,6 @@
-<!-- Include Head -->
-@include('frontend.partials.head')
+@extends('frontend.partials.app')
 
-<body class="bg-[#f8f8f8] font-roboto overflow-x-hidden">
-    <!-- Include Header -->
-    @include('frontend.partials.header')
+@section('content')
 
     <!-- Cart Section -->
     <section class="flex justify-center items-center min-h-screen bg-gradient-to-r py-32 poppins-regular px-5 md:px-10">
@@ -67,6 +64,4 @@
         </div>
     </section>
 
-    {{-- header section js --}}
-    <script src="{{ asset('assets/js/header.js') }}"></script>
-</body>
+@endsection 

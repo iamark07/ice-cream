@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    @include('frontend.partials.head')
-</head>
-<body class="text-gray-800 font-roboto overflow-x-hidden poppins-regular">
-    @include('frontend.partials.header')
+@extends('frontend.partials.app')
+
+@section('content')
     
     <!-- Breadcrumb Section -->
     <section class="relative w-full bg-cover bg-center" style="background-image: url('assets/img/header.jpg');">
         <div class="pt-48 pb-28 md:pt-56 md:pb-32 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white">
-            <h2 class="text-3xl md:text-4xl font-bold">Contact Us</h2>
+            <h2 class="text-3xl md:text-5xl font-bold font-pacifico">Contact Us</h2>
             <p class="mt-2 md:text-lg"><a href="{{ route('home') }}" class="text-gray-300 hover:text-white">Home</a> / Contact Us</p>
         </div>
     </section>
@@ -101,7 +97,4 @@
         </div>
     </section>
     
-    @include('frontend.partials.footer')
-    <script src="{{ asset('assets/js/header.js') }}"></script>
-</body>
-</html>
+@endsection 
