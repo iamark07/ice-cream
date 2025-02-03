@@ -12,9 +12,22 @@
 
     {{-- popular flavors section --}}
     <section class="py-16 bg-[#f8f8f8] poppins-regular">
+
+        <!-- Filter Dropdown Button -->
+        <div class=" flex justify-center md:justify-end mb-10 px-5 md:px-10">
+            <div class="w-fit relative">
+                <button id="filter-toggle" class="bg-pink-500 text-white px-7 py-2 rounded-lg shadow-md hover:bg-pink-600 transition-all">Filter Categories <i class="ri-arrow-down-s-line"></i></button>
+                <div id="filter-dropdown" class="hidden z-30 absolute bg-white shadow-lg rounded-lg mt-2 py-2 w-full left-1/2 transform -translate-x-1/2 p-2">
+                    <button class="filter-btn w-full text-left px-3 py-2 hover:bg-pink-500 hover:text-white rounded-md transition-all" data-category="all">All</button>
+                    <button class="filter-btn w-full text-left px-3 py-2 hover:bg-pink-500 hover:text-white rounded-md transition-all" data-category="classic_flavors">Classic Flavors</button>
+                    <button class="filter-btn w-full text-left px-3 py-2 hover:bg-pink-500 hover:text-white rounded-md transition-all" data-category="premium_flavors">Premium Flavors</button>
+                    <button class="filter-btn w-full text-left px-3 py-2 hover:bg-pink-500 hover:text-white rounded-md transition-all" data-category="comobs_&_specials">Combos & Specials</button>
+                </div>
+            </div>
+        </div>
         <div class="px-5 md:px-10">
             <h2 class="text-2xl md:text-4xl font-semibold text-white-500 mb-10 font-pacifico text-pink-500 text-center">
-                Popular Ice Cream Flavors
+                Our Ice Cream Flavors
             </h2>
     
             <div class="relative">
@@ -24,15 +37,15 @@
                 </button>
     
                 <!-- Scrollable Flavors Container -->
-                <div id="flavorScroll" class="flex gap-1 md:gap-5 overflow-x-auto px-5 py-4 cursor-grab active:cursor-grabbing scroll-smooth scrollbar-hide">
+                <div id="flavorScroll" class="flex overflow-x-auto py-4 cursor-grab active:cursor-grabbing scroll-smooth scrollbar-hide">
                     
                     <!-- Single Flavor Cards -->
-                    <a href="">
+                    <a href="" class="mx-2 transition-all duration-300 hover:scale-105">
                         <div class="min-w-[120px] sm:min-w-[192px] flex flex-col items-center">
                             <div class="bg-white rounded-md shadow-lg grid place-items-center relative overflow-hidden">
                                 <div class="w-full h-full z-10 absolute top-0 left-0">
                                     <div class="w-full h-full bg-black opacity-50 z-10 absolute top-0 left-0"></div>
-                                    <p class="text-white text-sm font-semibold md:text-base text-nowrap z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Chocolate</p>
+                                    <p class="text-white text-xs sm:text-sm font-semibold md:text-base text-nowrap z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Chocolate</p>
                                 </div>
                                 <img src="{{ asset('assets/img/portfolio-1.jpg') }}" alt="Chocolate" class="w-28 sm:w-48 h-28 sm:h-48 rounded-md object-cover">
                             </div>
@@ -40,12 +53,12 @@
                         </div>
                     </a>
     
-                    <a href="">
+                    <a href="" class="mx-2 transition-all duration-300 hover:scale-105">
                         <div class="min-w-[120px] sm:min-w-[192px] flex flex-col items-center">
                             <div class="bg-white rounded-md shadow-lg grid place-items-center relative overflow-hidden">
                                 <div class="w-full h-full z-10 absolute top-0 left-0">
                                     <div class="w-full h-full bg-black opacity-50 z-10 absolute top-0 left-0"></div>
-                                    <p class="text-white text-sm font-semibold md:text-base text-nowrap z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Vanilla</p>
+                                    <p class="text-white text-xs sm:text-sm font-semibold md:text-base text-nowrap z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Vanilla</p>
                                 </div>
                                 <img src="{{ asset('assets/img/portfolio-2.jpg') }}" alt="Vanilla" class="w-28 sm:w-48 h-28 sm:h-48 rounded-md object-cover">
                             </div>
@@ -53,12 +66,12 @@
                         </div>
                     </a>
     
-                    <a href="">
+                    <a href="" class="mx-2 transition-all duration-300 hover:scale-105">
                         <div class="min-w-[120px] sm:min-w-[192px] flex flex-col items-center">
                             <div class="bg-white rounded-md shadow-lg grid place-items-center relative overflow-hidden">
                                 <div class="w-full h-full z-10 absolute top-0 left-0">
                                     <div class="w-full h-full bg-black opacity-50 z-10 absolute top-0 left-0"></div>
-                                    <p class="text-white text-sm font-semibold md:text-base text-nowrap z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Strawberry</p>
+                                    <p class="text-white text-xs sm:text-sm font-semibold md:text-base text-nowrap z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Strawberry</p>
                                 </div>
                                 <img src="{{ asset('assets/img/portfolio-3.jpg') }}" alt="Strawberry" class="w-28 sm:w-48 h-28 sm:h-48 rounded-md object-cover">
                             </div>
@@ -66,12 +79,12 @@
                         </div>
                     </a>
     
-                    <a href="">
+                    <a href="" class="mx-2 transition-all duration-300 hover:scale-105">
                         <div class="min-w-[120px] sm:min-w-[192px] flex flex-col items-center">
                             <div class="bg-white rounded-md shadow-lg grid place-items-center relative overflow-hidden">
                                 <div class="w-full h-full z-10 absolute top-0 left-0">
                                     <div class="w-full h-full bg-black opacity-50 z-10 absolute top-0 left-0"></div>
-                                    <p class="text-white text-sm font-semibold md:text-base text-nowrap z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Mango</p>
+                                    <p class="text-white text-xs sm:text-sm font-semibold md:text-base text-nowrap z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Mango</p>
                                 </div>
                                 <img src="{{ asset('assets/img/portfolio-4.jpg') }}" alt="Mango" class="w-28 sm:w-48 h-28 sm:h-48 rounded-md object-cover">
                             </div>
@@ -79,12 +92,12 @@
                         </div>
                     </a>
     
-                    <a href="">
+                    <a href="" class="mx-2 transition-all duration-300 hover:scale-105">
                         <div class="min-w-[120px] sm:min-w-[192px] flex flex-col items-center">
                             <div class="bg-white rounded-md shadow-lg grid place-items-center relative overflow-hidden">
                                 <div class="w-full h-full z-10 absolute top-0 left-0">
                                     <div class="w-full h-full bg-black opacity-50 z-10 absolute top-0 left-0"></div>
-                                    <p class="text-white text-sm font-semibold md:text-base text-nowrap z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Pistachio</p>
+                                    <p class="text-white text-xs sm:text-sm font-semibold md:text-base text-nowrap z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Pistachio</p>
                                 </div>
                                 <img src="{{ asset('assets/img/portfolio-5.jpg') }}" alt="Pistachio" class="w-28 sm:w-48 h-28 sm:h-48 rounded-md object-cover">
                             </div>
@@ -92,12 +105,12 @@
                         </div>
                     </a>
     
-                    <a href="">
+                    <a href="" class="mx-2 transition-all duration-300 hover:scale-105">
                         <div class="min-w-[120px] sm:min-w-[192px] flex flex-col items-center">
                             <div class="bg-white rounded-md shadow-lg grid place-items-center relative overflow-hidden">
                                 <div class="w-full h-full z-10 absolute top-0 left-0">
                                     <div class="w-full h-full bg-black opacity-50 z-10 absolute top-0 left-0"></div>
-                                    <p class="text-white text-sm font-semibold md:text-base text-nowrap z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Cookies & Cream</p>
+                                    <p class="text-white text-xs sm:text-sm font-semibold md:text-base text-nowrap z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Cookies & Cream</p>
                                 </div>
                                 <img src="{{ asset('assets/img/portfolio-6.jpg') }}" alt="Cookies & Cream" class="w-28 sm:w-48 h-28 sm:h-48 rounded-md object-cover">
                             </div>
@@ -105,12 +118,12 @@
                         </div>
                     </a>
     
-                    <a href="">
+                    <a href="" class="mx-2 transition-all duration-300 hover:scale-105">
                         <div class="min-w-[120px] sm:min-w-[192px] flex flex-col items-center">
                             <div class="bg-white rounded-md shadow-lg grid place-items-center relative overflow-hidden">
                                 <div class="w-full h-full z-10 absolute top-0 left-0">
                                     <div class="w-full h-full bg-black opacity-50 z-10 absolute top-0 left-0"></div>
-                                    <p class="text-white text-sm font-semibold md:text-base text-nowrap z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Blueberry</p>
+                                    <p class="text-white text-xs sm:text-sm font-semibold md:text-base text-nowrap z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Blueberry</p>
                                 </div>
                                 <img src="{{ asset('assets/img/portfolio-1.jpg') }}" alt="Blueberry" class="w-28 sm:w-48 h-28 sm:h-48 rounded-md object-cover">
                             </div>
@@ -118,12 +131,12 @@
                         </div>
                     </a>
         
-                    <a href="">
+                    <a href="" class="mx-2 transition-all duration-300 hover:scale-105">
                         <div class="min-w-[120px] sm:min-w-[192px] flex flex-col items-center">
                             <div class="bg-white rounded-md shadow-lg grid place-items-center relative overflow-hidden">
                                 <div class="w-full h-full z-10 absolute top-0 left-0">
                                     <div class="w-full h-full bg-black opacity-50 z-10 absolute top-0 left-0"></div>
-                                    <p class="text-white text-sm font-semibold md:text-base text-nowrap z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Mint Chocolate</p>
+                                    <p class="text-white text-xs sm:text-sm font-semibold md:text-base text-nowrap z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Mint Chocolate</p>
                                 </div>
                                 <img src="{{ asset('assets/img/portfolio-2.jpg') }}" alt="Mint Chocolate" class="w-28 sm:w-48 h-28 sm:h-48 rounded-md object-cover">
                             </div>
@@ -143,48 +156,52 @@
                 <a href="{{ route('flavors') }}" class="bg-pink-500 text-white py-2 px-6 rounded-md hover:bg-pink-600 transition">More Flavors</a>
             </div> --}}
         </div>
-    </section>
 
-    <!-- Ice Cream Categories -->
-    <section class="py-20 px-6 md:px-10 xl:px-20">
-        <h2 class="text-3xl font-bold text-center text-purple-600 mb-5">Our Delicious Categories</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div class="p-6 border rounded-lg shadow-lg text-center">
-                <h3 class="text-xl font-semibold mb-3">🍦 Classic Flavors</h3>
-                <p>Enjoy the timeless taste of vanilla, chocolate, and strawberry.</p>
+        <!-- flavors Section -->
+        <div class="pb-16 pt-16 md:pt-32 px-5 md:px-10 lg:px-20 poppins-regular">
+            <div class="mx-auto">
+                <h2 class="text-sm md:text-2xl font-semibold text-pink-500 mb-8 font-pacifico">Our Best Flavored Ice Creams</span></h2>
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8">
+                    <!-- Product Card 1 -->
+                    <div class="product-card pb-5 p-3 md:p-6 border rounded shadow-lg">
+                        <img src="{{ asset('assets/img/portfolio-1.jpg')}}" alt="Ice Cream" class="w-full h-36 sm:h-48 object-cover rounded mb-4">
+                        <h3 class="text-sm text-nowrap text-ellipsis w-full overflow-x-hidden md:text-xl font-semibold">Vanilla Ice Cream</h3>
+                        <p class="text-xs mt-2">A classic vanilla ice cream made from the finest ingredients, perfect for any occasion.</p>
+                        <p class="text-lg md:text-xl font-semibold mt-4 text-pink-500">&#8377; 100.00</p>
+                        <a href="{{ route('product')}}" class="text-sm md:text-base w-full md:w-fit text-center inline-block bg-pink-500 text-white px-6 py-3 rounded-lg mt-4">View Details</a>
+                    </div>
+                    
+                    <!-- Product Card 2 -->
+                    <div class="product-card pb-5 p-3 md:p-6 border rounded shadow-lg">
+                        <img src="{{ asset('assets/img/portfolio-2.jpg')}}" alt="Ice Cream" class="w-full h-36 sm:h-48 object-cover rounded mb-4">
+                        <h3 class="text-sm text-nowrap text-ellipsis w-full overflow-x-hidden md:text-xl font-semibold">Chocolate Fudge</h3>
+                        <p class="text-xs mt-2">Indulge in rich and creamy chocolate fudge ice cream, made with premium cocoa.</p>
+                        <p class="text-lg md:text-xl font-semibold mt-4 text-pink-500">&#8377; 120.00</p>
+                        <a href="{{ route('product')}}" class="text-sm md:text-base w-full md:w-fit text-center inline-block bg-pink-500 text-white px-6 py-3 rounded-lg mt-4">View Details</a>
+                    </div>
+                    
+                    <!-- Product Card 3 -->
+                    <div class="product-card pb-5 p-3 md:p-6 border rounded shadow-lg">
+                        <img src="{{ asset('assets/img/portfolio-3.jpg')}}" alt="Ice Cream" class="w-full h-36 sm:h-48 object-cover rounded mb-4">
+                        <h3 class="text-sm text-nowrap text-ellipsis w-full overflow-x-hidden md:text-xl font-semibold">Strawberry Delight</h3>
+                        <p class="text-xs mt-2">A delightful strawberry ice cream with chunks of fresh berries and a creamy texture.</p>
+                        <p class="text-lg md:text-xl font-semibold mt-4 text-pink-500">&#8377; 110.00</p>
+                        <a href="{{ route('product')}}" class="text-sm md:text-base w-full md:w-fit text-center inline-block bg-pink-500 text-white px-6 py-3 rounded-lg mt-4">View Details</a>
+                    </div>
+                </div>
             </div>
-            <div class="p-6 border rounded-lg shadow-lg text-center">
-                <h3 class="text-xl font-semibold mb-3">🍨 Premium Flavors</h3>
-                <p>Indulge in exotic flavors like hazelnut, matcha, and salted caramel.</p>
-            </div>
-            <div class="p-6 border rounded-lg shadow-lg text-center">
-                <h3 class="text-xl font-semibold mb-3">🍧 Combos & Specials</h3>
-                <p>Try our delicious sundaes, shakes, and special ice cream blends.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Ice Cream Flavors Listing -->
-    <section class="py-20 px-6 md:px-10 xl:px-20 bg-gray-100">
-        <h2 class="text-3xl font-bold text-center text-purple-600 mb-5">Explore Our Flavors</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                <img src="{{ asset('assets/img/flavors/vanilla.jpg') }}" alt="Vanilla" class="w-full h-40 object-cover rounded-lg mb-4">
-                <h3 class="text-xl font-semibold mb-3">Vanilla Bliss</h3>
-                <p>A creamy, classic vanilla ice cream loved by all.</p>
-                <button class="mt-4 bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-700">Order Now</button>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                <img src="{{ asset('assets/img/flavors/chocolate.jpg') }}" alt="Chocolate" class="w-full h-40 object-cover rounded-lg mb-4">
-                <h3 class="text-xl font-semibold mb-3">Choco Delight</h3>
-                <p>Rich and creamy chocolate ice cream with a smooth texture.</p>
-                <button class="mt-4 bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-700">Order Now</button>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                <img src="{{ asset('assets/img/flavors/strawberry.jpg') }}" alt="Strawberry" class="w-full h-40 object-cover rounded-lg mb-4">
-                <h3 class="text-xl font-semibold mb-3">Strawberry Swirl</h3>
-                <p>Refreshing strawberry flavor with real fruit chunks.</p>
-                <button class="mt-4 bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-700">Order Now</button>
+            <!-- Pagination -->
+            <div class="flex justify-center mt-16">
+                <ul class="flex justify-center gap-3">
+                    <li class="pagination-btn cursor-pointer bg-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all">Prev</li>
+                    
+                    <li class="pagination-btn cursor-pointer bg-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all">1</li>
+                    <li class="pagination-btn cursor-pointer bg-white text-black px-4 py-2 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all">2</li>
+                    <li class="pagination-btn cursor-pointer bg-white text-black px-4 py-2 rounded-lg shadow-md hover:bg-pink-500  hover:text-white transition-all">3</li>
+                    
+                    <li class="pagination-btn cursor-pointer bg-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all">Next</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -196,52 +213,87 @@
     @endsection
 
     <script>
-        // flavors scroll animation feature
         document.addEventListener("DOMContentLoaded", function () {
-    const flavorScroll = document.getElementById("flavorScroll");
-    const scrollLeft = document.getElementById("scrollLeft");
-    const scrollRight = document.getElementById("scrollRight");
 
-    let isDown = false;
-    let startX;
-    let scrollLeftPosition;
+            // product categories
+            document.getElementById("filter-toggle").addEventListener("click", function() {
+                document.getElementById("filter-dropdown").classList.toggle("hidden");
+            });
 
-    // Drag-to-scroll functionality
-    flavorScroll.addEventListener("mousedown", (e) => {
-        isDown = true;
-        startX = e.pageX - flavorScroll.offsetLeft;
-        scrollLeftPosition = flavorScroll.scrollLeft;
-    });
+            document.querySelectorAll(".filter-btn").forEach(button => {
+                button.addEventListener("click", () => {
+                    document.getElementById("filter-dropdown").classList.add("hidden");
+                    alert("Filtering feature will be implemented soon!");
+                });
+            });
+            const flavorScroll = document.getElementById("flavorScroll");
+            const scrollLeft = document.getElementById("scrollLeft");
+            const scrollRight = document.getElementById("scrollRight");
 
-    flavorScroll.addEventListener("mouseleave", () => {
-        isDown = false;
-    });
+            let isDown = false;
+            let startX;
+            let scrollLeftPosition;
 
-    flavorScroll.addEventListener("mouseup", () => {
-        isDown = false;
-    });
+            // Get the first flavor card to determine scroll width
+            function getCardWidth() {
+                const firstCard = flavorScroll.querySelector("a");
+                if (firstCard) {
+                    return firstCard.offsetWidth + parseInt(window.getComputedStyle(firstCard).marginRight);
+                }
+                return 200; // Default width if no card found
+            }
 
-    flavorScroll.addEventListener("mousemove", (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - flavorScroll.offsetLeft;
-        const walk = (x - startX) * 2;
-        flavorScroll.scrollLeft = scrollLeftPosition - walk;
-    });
+            // Scroll left and right
+            function scroll(direction) {
+                const scrollAmount = getCardWidth(); // Get the dynamic card width
+                flavorScroll.scrollBy({
+                    left: direction === "left" ? -scrollAmount : scrollAmount,
+                    behavior: "smooth",
+                });
+            }
 
-    // Get the width of a single flavor card (you can adjust the selector if necessary)
-    const flavorCard = document.querySelector(".min-w-[120px]"); // Make sure this is the correct class for a single flavor card
-    const scrollAmount = flavorCard.offsetWidth; // Set scrollAmount to the card width
+            // Click event listeners for scroll buttons
+            scrollLeft.addEventListener("click", () => scroll("left"));
+            scrollRight.addEventListener("click", () => scroll("right"));
 
-    // Scroll buttons functionality (scrolls one card at a time)
-    scrollLeft.addEventListener("click", () => {
-        flavorScroll.scrollLeft -= scrollAmount;
-    });
+            // Drag-to-scroll functionality (for smooth scrolling)
+            flavorScroll.addEventListener("mousedown", (e) => {
+                isDown = true;
+                startX = e.pageX - flavorScroll.offsetLeft;
+                scrollLeftPosition = flavorScroll.scrollLeft;
+                flavorScroll.classList.add("active");
+            });
 
-    scrollRight.addEventListener("click", () => {
-        flavorScroll.scrollLeft += scrollAmount;
-    });
-});
+            flavorScroll.addEventListener("mouseleave", () => {
+                isDown = false;
+                flavorScroll.classList.remove("active");
+            });
+
+            flavorScroll.addEventListener("mouseup", () => {
+                isDown = false;
+                flavorScroll.classList.remove("active");
+            });
+
+            flavorScroll.addEventListener("mousemove", (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - flavorScroll.offsetLeft;
+                const walk = (x - startX) * 2;
+                flavorScroll.scrollLeft = scrollLeftPosition - walk;
+            });
+
+            // Touch scroll support for mobile
+            flavorScroll.addEventListener("touchstart", (e) => {
+                startX = e.touches[0].clientX;
+                scrollLeftPosition = flavorScroll.scrollLeft;
+            });
+
+            flavorScroll.addEventListener("touchmove", (e) => {
+                const x = e.touches[0].clientX;
+                const walk = (x - startX) * 2;
+                flavorScroll.scrollLeft = scrollLeftPosition - walk;
+            });
+        });
 
     </script>
 

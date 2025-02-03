@@ -172,30 +172,29 @@
             <h2 class="text-2xl md:text-4xl font-semibold text-pink-500 mb-20 font-pacifico animate-bounce">Trending Ice Creams</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-8">
                 <!-- Product Cards -->
-                <a href="">
+                
+                <div class="bg-white p-6 shadow-lg text-center rounded-lg transform transition duration-300 hover:scale-105">
+                    <a href="{{ route('product')}}"><img src="{{ asset('assets/img/trending.png')}}" class="w-full h-56 object-cover rounded-md" alt="Chocolate Ice Cream"></a>
+                    <a href="{{ route('product')}}"><h3 class="text-xl font-semibold text-gray-800 mt-4">Chocolate Ice Cream</h3></a>
+                    <p class="text-pink-700 font-semibold text-lg">&#8377; 5.99</p>
+                    <a href="{{ route('cart')}}"><button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button></a>
+                </div>
+                
+                
+                <div class="bg-white p-6 shadow-lg text-center rounded-lg transform transition duration-300 hover:scale-105">
+                    <a href="{{ route('product')}}"><img src="{{ asset('assets/img/trending.png')}}" class="w-full h-56 object-cover rounded-md" alt="Chocolate Ice Cream"></a>
+                    <a href="{{ route('product')}}"><h3 class="text-xl font-semibold text-gray-800 mt-4">Chocolate Ice Cream</h3></a>
+                    <p class="text-pink-700 font-semibold text-lg">&#8377; 5.99</p>
+                    <a href="{{ route('cart')}}"><button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button></a>
+                </div>
+                
+                 
                     <div class="bg-white p-6 shadow-lg text-center rounded-lg transform transition duration-300 hover:scale-105">
-                        <img src="{{ asset('assets/img/trending.png')}}" class="w-full h-56 object-cover rounded-md" alt="Chocolate Ice Cream">
-                        <h3 class="text-xl font-semibold text-gray-800 mt-4">Chocolate Ice Cream</h3>
+                        <a href="{{ route('product')}}"><img src="{{ asset('assets/img/trending.png')}}" class="w-full h-56 object-cover rounded-md" alt="Chocolate Ice Cream"></a>
+                        <a href="{{ route('product')}}"><h3 class="text-xl font-semibold text-gray-800 mt-4">Chocolate Ice Cream</h3></a>
                         <p class="text-pink-700 font-semibold text-lg">&#8377; 5.99</p>
-                        <button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
+                        <a href="{{ route('cart')}}"><button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button></a>
                     </div>
-                </a>
-                <a href="">    
-                    <div class="bg-white p-6 shadow-lg text-center rounded-lg transform transition duration-300 hover:scale-105">
-                        <img src="{{ asset('assets/img/trending.png')}}" class="w-full h-56 object-cover rounded-md" alt="Chocolate Ice Cream">
-                        <h3 class="text-xl font-semibold text-gray-800 mt-4">Chocolate Ice Cream</h3>
-                        <p class="text-pink-700 font-semibold text-lg">&#8377; 5.99</p>
-                        <button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
-                    </div>
-                </a>
-                <a href="">    
-                    <div class="bg-white p-6 shadow-lg text-center rounded-lg transform transition duration-300 hover:scale-105">
-                        <img src="{{ asset('assets/img/trending.png')}}" class="w-full h-56 object-cover rounded-md" alt="Chocolate Ice Cream">
-                        <h3 class="text-xl font-semibold text-gray-800 mt-4">Chocolate Ice Cream</h3>
-                        <p class="text-pink-700 font-semibold text-lg">&#8377; 5.99</p>
-                        <button class="w-full mt-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>   Add to Cart</button>
-                    </div>
-                </a>
             </div>
         </div>
     </section>
@@ -249,30 +248,42 @@
             <!-- Product Grid -->
             <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Static Products -->
-                <a href="{{ route('product')}}">
-                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <img src="{{asset('assets/img/portfolio-1.jpg')}}" alt="Chocolate Bliss" class="w-full h-48 object-cover rounded-md mb-4">
-                    <h3 class="text-xl font-bold">Chocolate Bliss</h3>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <a href="{{ route('product')}}">
+                        <img src="{{asset('assets/img/portfolio-1.jpg')}}" alt="Chocolate Bliss" class="w-full h-48 object-cover rounded-md mb-4">
+                    </a>
+                    <a href="{{ route('product')}}">
+                        <h3 class="text-xl font-bold">Chocolate Bliss</h3>
+                    </a>
                     <p class="text-pink-700 font-semibold text-lg">&#8377; 5.99</p>
-                    <button class="mt-4 bg-pink-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
-                    </div>
-                </a>
-                <a href="{{ route('product')}}">
-                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <img src="{{asset('assets/img/portfolio-2.jpg')}}" alt="Strawberry Delight" class="w-full h-48 object-cover rounded-md mb-4">
-                    <h3 class="text-xl font-bold">Strawberry Delight</h3>
+                    <a href="{{ route('cart')}}"><button class="mt-4 bg-pink-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button></a>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <a href="{{ route('product')}}">
+                        <img src="{{asset('assets/img/portfolio-2.jpg')}}" alt="Strawberry Delight" class="w-full h-48 object-cover rounded-md mb-4">
+                    </a>
+                    <a href="{{ route('product')}}">
+                        <h3 class="text-xl font-bold">Strawberry Delight</h3>
+                    </a>
                     <p class="text-pink-700 font-semibold text-lg">&#8377; 4.99</p>
-                    <button class="mt-4 bg-pink-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
-                    </div>
-                </a>
-                <a href="{{ route('product')}}">
-                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <img src="{{asset('assets/img/portfolio-3.jpg')}}" alt="Nutty Caramel" class="w-full h-48 object-cover rounded-md mb-4">
-                    <h3 class="text-xl font-bold">Nutty Caramel</h3>
+                    <a href="{{ route('cart')}}">
+                        <button class="mt-4 bg-pink-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
+                    </a>
+                </div>
+                
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <a href="{{ route('product')}}"><img src="{{asset('assets/img/portfolio-3.jpg')}}" alt="Nutty Caramel" class="w-full h-48 object-cover rounded-md mb-4"></a>
+                    <a href="{{ route('product')}}">
+                        <h3 class="text-xl font-bold">Nutty Caramel</h3>
+                    </a>
                     <p class="text-pink-700 font-semibold text-lg">&#8377; 6.49</p>
-                    <button class="mt-4 bg-pink-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
-                    </div>
-                </a>
+                    <a href="{{ route('product')}}">
+                        <button class="mt-4 bg-pink-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-pink-600 transition-all"><i class="ri-shopping-cart-line md:text-xl me-2"></i>Add to Cart</button>
+                    </a>
+                </div>
             </div>
     
             <!-- Pagination -->
