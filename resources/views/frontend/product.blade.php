@@ -137,6 +137,11 @@
         </div>
     </div> 
 
+    {{-- footer --}}
+    @section('footer')
+        @include('frontend.partials.footer')
+    @endsection
+
     <!-- Review Modal Script -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {

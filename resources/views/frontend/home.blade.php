@@ -732,4 +732,21 @@
         </div>
     </section>
 
+    {{-- footer --}}
+    @section('footer')
+        @include('frontend.partials.footer')
+    @endsection
+
+    @section('extra-scripts')
+        <!-- jQuery and Owl Carousel JS (Only for Home Page) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+        
+        <script src="{{ asset('assets/js/script.js') }}"></script>
+    @endsection
+
 @endsection 

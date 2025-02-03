@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     @include('frontend.partials.head')
 </head>
@@ -9,18 +11,13 @@
         @yield('content')
     </main>
 
-    @include('frontend.partials.footer') <!-- Footer -->
+    @yield('footer') <!-- Footer will be included only if defined -->
 
-    <!-- jQuery and Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-
-    {{-- header section js --}}
+    {{-- Default Scripts (For All Pages) --}}
     <script src="{{ asset('assets/js/header.js') }}"></script>
-    <script src="{{ asset('assets/js/script.js') }}"></script>
+
+    {{-- Extra Scripts (Only for Home Page) --}}
+    @yield('extra-scripts')
 </body>
 
 </html>

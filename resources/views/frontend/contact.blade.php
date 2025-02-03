@@ -96,5 +96,10 @@
             </div>
         </div>
     </section>
+
+    {{-- footer --}}
+    @section('footer')
+        @include('frontend.partials.footer')
+    @endsection
     
 @endsection 
