@@ -3,7 +3,7 @@
     <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
         <!-- Company Info -->
         <div class="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-1 flex flex-col items-center lg:items-start">
-            <h3 class="text-2xl font-bold font-pacifico">Ice Cream Delight</h3>
+            <a href="{{ route('home')}}"><h3 class="text-2xl font-bold font-pacifico">Ice Cream Delight</h3></a>
             <p class="mt-3 text-sm text-center lg:text-start">Bringing joy in every scoop! Our handcrafted ice creams are made with love and the finest ingredients.</p>
             <div class="flex gap-4 mt-4">
                 <a href="#" class="text-xl hover:text-gray-300 transition"><i class="ri-facebook-circle-fill"></i></a>

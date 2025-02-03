@@ -29,13 +29,14 @@
                 Indulge in our delightful collection of flavors and enjoy the coolest treats of the season!
             </p>
             <div id="hero_button" class="animate animate-2">
-                <a href="shop.html"
+                <a href="{{ route('shop')}}"
                 class="bg-pink-600 text-white py-3 px-7 rounded-md text-base mt-5 hover:bg-pink-700 transition duration-300 inline-block poppins-regular">Shop
                 Now</a>
             </div>
         </div>
     </section>
 
+    {{-- popular flavors section --}}
     <section class="py-16 bg-[#f8f8f8] poppins-regular">
         <div class="px-5 md:px-10">
             <h2 class="text-2xl md:text-4xl font-semibold text-white-500 mb-10 font-pacifico animate-bounce text-pink-500 text-center">
@@ -168,7 +169,7 @@
     <!-- Trending Products Section -->
     <section id="trending-products" class="py-20 bg-[#f8f8f8] text-center poppins-regular">
         <div class="mx-auto px-5 md:px-10 xl:px-32">
-            <h2 class="text-2xl md:text-4xl font-semibold text-pink-500 mb-20 font-pacifico animate-bounce">Trending Products</h2>
+            <h2 class="text-2xl md:text-4xl font-semibold text-pink-500 mb-20 font-pacifico animate-bounce">Trending Ice Creams</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-8">
                 <!-- Product Cards -->
                 <a href="">

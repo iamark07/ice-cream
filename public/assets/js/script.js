@@ -33,6 +33,13 @@ window.onload = () => {
         "Discover Treats",
         "Browse Collection",
     ];
+
+    const buttons_links = [
+        "shop",
+        "flavors",
+        "services",
+        "flavors",
+    ];
     const heroTitle = document.getElementById("hero_title");
     const heroSubtitle = document.getElementById("hero_subtitle");
     const heroButton = document.querySelector("#hero_button a");
@@ -50,6 +57,7 @@ window.onload = () => {
         heroTitle.textContent = titles[currentIndex];
         heroSubtitle.textContent = subtitles[currentIndex];
         heroButton.textContent = buttons[currentIndex];
+        heroButton.setAttribute("href", buttons_links[currentIndex]);
 
         // Trigger GSAP animation for the content
         gsap.from(".animate-2", {

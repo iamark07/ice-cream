@@ -3,10 +3,10 @@
 @section('content')
     
     <!-- Breadcrumb Section -->
-    <section class="relative w-full bg-cover bg-center" style="background-image: url('assets/img/header.jpg');">
-        <div class="pt-48 pb-28 md:pt-56 md:pb-32 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white">
-            <h2 class="text-3xl md:text-5xl font-bold font-pacifico">About Us</h2>
-            <p class="mt-2 md:text-lg"><a href="{{ route('home') }}" class="text-gray-300 hover:text-white">Home</a> / About Us</p>
+    <section class="relative w-full bg-cover bg-center poppins-regular" style="background-image: url('assets/img/header.jpg');">
+        <div class="pt-48 pb-28 md:pt-56 md:pb-32 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white px-5">
+            <h2 class="text-3xl md:text-5xl font-bold font-pacifico text-center">About Us</h2>
+            <p class="mt-2 md:text-lg"><a href="{{ route('home') }}" class="text-gray-300 text-center hover:text-white">Home</a> / About Us</p>
         </div>
     </section>
     

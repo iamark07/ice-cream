@@ -117,6 +117,7 @@
         <nav class="flex flex-col mt-14 gap-6 text-lg text-gray-800 overflow-auto" style="height: calc(100dvh - 124px);">
             <a href="{{ route('home') }}" class="text-pink-500 transition"><i class="ri-home-5-line me-2 text-xl"></i>Home</a>
             <a href="{{ route('about') }}" class="hover:text-pink-500 transition"><i class="ri-information-line me-2 text-xl"></i>About</a>
+            <a href="{{ route('services') }}" class="hover:text-pink-500 transition"><i class="ri-service-line me-2 text-xl"></i>Services</a>
             <a href="{{ route('shop') }}" class="hover:text-pink-500 transition"><i class="ri-store-line me-2 text-xl"></i>Shop</a>
             <a href="{{ route('flavors') }}" class="hover:text-pink-500 transition"><i class="ri-file-list-3-line me-2 text-xl"></i>Flavors</a>
             <a href="{{ route('wishlist') }}" class="hover:text-pink-500 transition"><i class="ri-heart-2-line me-2 text-xl"></i>Wishlist</a>
