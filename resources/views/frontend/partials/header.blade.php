@@ -43,18 +43,18 @@
                 <div id="profile-dropdown"
                     class="absolute right-0 mt-3 w-44 bg-white rounded-lg shadow-lg opacity-0 scale-95 transform origin-top-right transition-all duration-300 ease-in-out hidden">
                     <ul class="p-2 text-gray-700">
-                        <li class="p-2 hover:bg-gray-100 rounded transition text-sm"><a href="profile.html"><i class="ri-user-2-line text-pink-400 me-2"></i>My Profile</a></li>
-                        <li class="p-2 hover:bg-gray-100 rounded transition text-sm"><a href="orders.html"><i class="ri-shopping-bag-line text-pink-400 me-2"></i>My Orders</a></li>
-                        <li class="p-2 hover:bg-gray-100 rounded transition text-sm"><a href="orders.html"><i class="ri-user-settings-line text-pink-400 me-2"></i>Admin Panel</a></li>
+                        <li><a href="{{ route('profile') }}" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm"><i class="ri-user-2-line text-pink-400 me-2"></i>My Profile</a></li>
+                        <li><a href="orders.html" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm"><i class="ri-shopping-bag-line text-pink-400 me-2"></i>My Orders</a></li>
+                        <li><a href="orders.html" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm"><i class="ri-user-settings-line text-pink-400 me-2"></i>Admin Panel</a></li>
                         <li class="relative">
                             <div id="language-btn" class="p-2 hover:bg-gray-100 rounded transition flex justify-between cursor-pointer text-sm"><span><i class="ri-global-line text-pink-400 me-2"></i>Language </span><i class="ri-arrow-right-s-line"></i>
                             </div>
                             <!-- Language Dropdown -->
                             <ul id="language-dropdown"
                                 class="absolute p-2 right-full top-1/2 mt-[-18px] w-36 bg-white rounded-lg shadow-lg scale-95 transform origin-left transition-all duration-300 ease-in-out hidden">
-                                <li class="p-2 hover:bg-gray-100 rounded transition text-sm"><a href="?lang=en" class="flex">English</a></li>
-                                <li class="p-2 hover:bg-gray-100 rounded transition text-sm"><a href="?lang=hi" class="flex">Hindi</a></li>
-                                <li class="p-2 hover:bg-gray-100 rounded transition text-sm"><a href="?lang=fr" class="flex">French</a></li>
+                                <li><a href="?lang=en" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm">English</a></li>
+                                <li><a href="?lang=hi" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm">Hindi</a></li>
+                                <li><a href="?lang=fr" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm">French</a></li>
                             </ul>
                         </li>
                         <li class="relative">
@@ -63,14 +63,14 @@
                             <!-- Currency Dropdown -->
                             <ul id="currency-dropdown"
                                 class="absolute p-2 right-full top-1/2 mt-[-18px] w-36 bg-white rounded-lg shadow-lg scale-95 transform origin-left transition-all duration-300 ease-in-out hidden">
-                                <li class="p-2 hover:bg-gray-100 rounded transition text-sm"><a href="?currency=usd" class="flex">USD</a></li>
-                                <li class="p-2 hover:bg-gray-100 rounded transition text-sm"><a href="?currency=inr" class="flex">INR</a></li>
-                                <li class="p-2 hover:bg-gray-100 rounded transition text-sm"><a href="?currency=eur" class="flex">EUR</a></li>
+                                <li><a href="?currency=usd" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm">USD</a></li>
+                                <li><a href="?currency=inr" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm">INR</a></li>
+                                <li><a href="?currency=eur" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm">EUR</a></li>
                             </ul>
                         </li>
 
-                        <li class="p-2 hover:bg-gray-100 rounded transition text-sm"><a href="{{ route('login') }}" class="flex"><i class="ri-login-box-line text-pink-400 me-2"></i>Log in</a></li>
-                        <li class="p-2 hover:bg-gray-100 rounded transition text-sm"><a href=""><i class="ri-logout-box-line text-pink-400 me-2"></i>Log out</a></li>
+                        <li><a href="{{ route('login') }}" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm"><i class="ri-login-box-line text-pink-400 me-2"></i>Log in</a></li>
+                        <li><a href="" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm"><i class="ri-logout-box-line text-pink-400 me-2"></i>Log out</a></li>
                     </ul>
                 </div>
             </div>

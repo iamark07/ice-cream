@@ -35,7 +35,7 @@
                 
                 <!-- Forgot Password Link -->
                 <div class="text-center mt-4">
-                    <a href="" class="text-pink-500 hover:text-pink-600 text-sm">Forgot Password?</a>
+                    <a href="{{ route('forget_password')}}" class="text-pink-500 hover:text-pink-600 text-sm">Forgot Password?</a>
                 </div>
             </form>
 

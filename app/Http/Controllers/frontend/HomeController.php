@@ -62,6 +62,16 @@ class HomeController extends Controller
     return view('frontend.login');
 
    }
+   public function reset_password()
+   {
+    return view('frontend.reset_password');
+
+   }
+    public function forget_password()
+   {
+    return view('frontend.forget_password');
+
+   }
     public function register()
    {
     return view('frontend.register');
@@ -82,4 +92,15 @@ class HomeController extends Controller
     return view('frontend.faqs');
 
    }
+    public function userprofile()
+   {
+    return view('frontend.profile.user_profile.userprofile');
+
+   }
+    public function order_history()
+   {
+    return view('frontend.profile.user_profile.order_history');
+
+   }
+   
 }
