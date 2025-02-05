@@ -44,7 +44,8 @@
                     class="absolute right-0 mt-3 w-44 bg-white rounded-lg shadow-lg opacity-0 scale-95 transform origin-top-right transition-all duration-300 ease-in-out hidden">
                     <ul class="p-2 text-gray-700">
                         <li><a href="{{ route('profile') }}" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm"><i class="ri-user-2-line text-pink-400 me-2"></i>My Profile</a></li>
-                        <li><a href="orders.html" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm"><i class="ri-shopping-bag-line text-pink-400 me-2"></i>My Orders</a></li>
+                        <li><a href="{{ route('order_history') }}" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm"><i class="ri-shopping-bag-line text-pink-400 me-2"></i>My Orders</a></li>
+                        <li><a href="{{ route('profile') }}" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm"><i class="ri-settings-line text-pink-400 me-2"></i>Settings</a></li>
                         <li><a href="orders.html" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm"><i class="ri-user-settings-line text-pink-400 me-2"></i>Admin Panel</a></li>
                         <li class="relative">
                             <div id="language-btn" class="p-2 hover:bg-gray-100 rounded transition flex justify-between cursor-pointer text-sm"><span><i class="ri-global-line text-pink-400 me-2"></i>Language </span><i class="ri-arrow-right-s-line"></i>
@@ -107,7 +108,7 @@
 
 <!-- Mobile Menu -->
 <div id="mobile-menu"
-    class="lg:hidden fixed top-0 left-0 w-full h-[100dvh] transform -translate-x-full transition-transform duration-300 ease-in-out z-50 flex">
+    class="lg:hidden fixed top-0 left-0 w-full h-[100dvh] transform -translate-x-full transition-transform duration-300 ease-in-out z-50 flex poppins-regular">
     <div class="w-3/4 h-full bg-pink-200 shadow-lg relative p-5">
         <button id="menu-close" class="absolute top-4 right-4 text-2xl text-gray-700"><i class="ri-close-line"></i></button>
         <h1 class="text-xl md:text-2xl font-pacifico text-pink-700 px-0 md:px-10">
@@ -128,8 +129,9 @@
                     <i class="ri-user-line me-2 text-xl"></i> Profile <i class="ri-arrow-down-s-line ml-auto"></i>
                 </div>
                 <div id="mob-profile-dropdown" class="hidden flex flex-col p-2 bg-white shadow-lg mt-2 rounded-md">
-                    <a href="profile.html" class="text-start px-4 py-2 hover:bg-pink-100"><i class="ri-user-2-line text-pink-400 text-lg me-2"></i>My Profile</a>
-                    <a href="orders.html" class="text-start px-4 py-2 hover:bg-pink-100"><i class="ri-shopping-bag-line text-pink-400 text-lg me-2"></i>My Orders</a>
+                    <a href="{{ route('profile') }}" class="text-start px-4 py-2 hover:bg-pink-100"><i class="ri-user-2-line text-pink-400 text-lg me-2"></i>My Profile</a>
+                    <a href="{{ route('order_history') }}" class="text-start px-4 py-2 hover:bg-pink-100"><i class="ri-shopping-bag-line text-pink-400 text-lg me-2"></i>My Orders</a>
+                    <a href="{{ route('profile') }}" class="text-start px-4 py-2 hover:bg-pink-100"><i class="ri-settings-line text-pink-400 text-lg me-2"></i>Settings</a>
                     <a href="orders.html" class="text-start px-4 py-2 hover:bg-pink-100"><i class="ri-user-settings-line text-pink-400 text-lg me-2"></i>Admin Panel</a>
                     <a href="{{ route('login') }}" class="text-start px-4 py-2 hover:bg-pink-100"><i class="ri-login-box-line text-pink-400 text-lg me-2"></i>Log in</a>
                     <a href="" class="text-start px-4 py-2 hover:bg-pink-100"><i class="ri-logout-box-line text-pink-400 text-lg me-2"></i>Log out</a>

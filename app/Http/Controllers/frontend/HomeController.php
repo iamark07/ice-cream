@@ -102,5 +102,10 @@ class HomeController extends Controller
     return view('frontend.profile.user_profile.order_history');
 
    }
+    public function loyalty()
+   {
+    return view('frontend.profile.user_profile.loyalty');
+
+   }
    
 }

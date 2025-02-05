@@ -26,21 +26,27 @@
         </div>
         <ul>
             <li>
-                <a href="{{ route('profile') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-red-100">
+                <a href="{{ route('profile') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg bg-pink-100">
                     <i class="fas fa-user text-pink-500"></i>
                     <span>Profile</span>
                 </a>
             </li>
             <li>
-                <a href="{{ route('order_history') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-red-100">
+                <a href="{{ route('order_history') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
                     <i class="fas fa-box text-pink-500"></i>
                     <span>Order History</span>
                 </a>
             </li>
             <li>
-                <a href="{{ route('wishlist') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-red-100">
+                <a href="{{ route('wishlist') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
                     <i class="fas fa-heart text-pink-500"></i>
                     <span>Wishlist</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('loyalty') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
+                    <i class="ri-medal-fill text-pink-500"></i>
+                    <span>Rewards & Points</span>
                 </a>
             </li>
             <li>
@@ -50,7 +56,7 @@
                 </a>
             </li>
             <li>
-                <a href="{{ route('home') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-red-100">
+                <a href="{{ route('home') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
                     <i class="fas fa-arrow-left text-pink-500"></i>
                     <span>Back to Home</span>
                 </a>
@@ -60,11 +66,11 @@
     <div id="close_profile_menu_btn" class="w-[25%] h-full"></div>
 </div>
 
-<div class="flex h-screen poppins-regular">
+<div class="flex poppins-regular">
     <!-- Sidebar Navigation -->
     <aside class="w-[20%] sticky top-[72px] hidden lg:block bg-white shadow-lg p-5" style="height: calc(100dvh - 72px);">
         <nav class="space-y-1">
-            <a href="{{ route('profile') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100" onclick="showSection('profile')">
+            <a href="{{ route('profile') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg bg-pink-100" onclick="showSection('profile')">
                 <i class="fas fa-user text-pink-500"></i>
                 <span>Profile</span>
             </a>
@@ -76,13 +82,18 @@
                 <i class="fas fa-heart text-pink-500"></i>
                 <span>Wishlist</span>
             </a>
+            <a href="{{ route('loyalty') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100" onclick="showSection('settings')">
+                <i class="ri-medal-fill text-pink-500"></i>
+                <span>Rewards & Points </span>
+            </a>
             <a href="" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100" onclick="showSection('settings')">
                 <i class="fas fa-cog text-pink-500"></i>
                 <span>Settings</span>
             </a>
-            <a href="{{ route('home') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-red-100" onclick="window.location.href='home.html'">
+            <a href="{{ route('home') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100" onclick="window.location.href='home.html'">
                 <i class="fas fa-arrow-left text-pink-500"></i>
                 <span>Back to Home</span>
             </a>
         </nav>
     </aside>
+    

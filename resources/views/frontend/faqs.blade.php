@@ -67,7 +67,7 @@
                     <div id="faq-answer-4" class="mt-4 hidden text-start text-gray-600">
                         <p>To apply for a franchise, visit our "Franchise Opportunities" page, fill out the inquiry form, and our team will get in touch with you to guide you through the process.</p>
                         <a href="{{ route('franchise')}}" class="inline-block bg-gradient-to-r from-pink-500 to-yellow-400 text-white px-8 py-3 mt-5 font-semibold rounded-lg shadow-lg">
-                            Grab the Deal Now
+                            Apply for Franchise
                         </a>
                     </div>
                 </div>

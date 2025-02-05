@@ -44,3 +44,5 @@ Route::get('/shop',[HomeController::class,'shop'])->name('shop');
 Route::get('/profile',[HomeController::class,'userprofile'])->name('profile');
 
 Route::get('/order-history',[HomeController::class,'order_history'])->name('order_history');
+
+Route::get('/loyalty',[HomeController::class,'loyalty'])->name('loyalty');
