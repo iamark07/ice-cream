@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\frontend\HomeController;
+use App\Http\Controllers\franchise\FranchiseController;
 
 Route::get('/', function () {
     return view('frontend.home');
@@ -46,3 +47,25 @@ Route::get('/profile',[HomeController::class,'userprofile'])->name('profile');
 Route::get('/order-history',[HomeController::class,'order_history'])->name('order_history');
 
 Route::get('/loyalty',[HomeController::class,'loyalty'])->name('loyalty');
+
+
+
+
+// franchise
+Route::get('/franchise-dashboard',[FranchiseController::class,'franchise_dashboard'])->name('franchise_dashboard');
+
+Route::get('/franchise-customer-reviews',[FranchiseController::class,'franchise_customer_reviews'])->name('franchise_customer_reviews');
+
+Route::get('/franchise-employee-management',[FranchiseController::class,'franchise_employee_management'])->name('franchise_employee_management');
+
+Route::get('/franchise-inventory',[FranchiseController::class,'franchise_inventory'])->name('franchise_inventory');
+
+Route::get('/franchise-order-management',[FranchiseController::class,'franchise_order_management'])->name('franchise_order_management');
+
+Route::get('/franchise-sales-reports',[FranchiseController::class,'franchise_sales_reports'])->name('franchise_sales_reports');
+
+Route::get('/franchise-support',[FranchiseController::class,'franchise_support'])->name('franchise_support');
+
+Route::get('/franchise-promotions',[FranchiseController::class,'franchise_promotions'])->name('franchise_promotions');
+
+Route::get('/franchise-profile',[FranchiseController::class,'franchise_profile'])->name('franchise_profile');
