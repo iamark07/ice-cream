@@ -1,5 +1,5 @@
 <!-- Header -->
-<header class="bg-white sticky top-0 w-full shadow-lg p-4 flex justify-between items-center poppins-regular">
+<header class="bg-white sticky top-0 w-full z-40 shadow-lg p-4 flex justify-between items-center poppins-regular">
     <h2 class="text-xl font-bold text-gray-800 poppins-regular">Franchise Dashboard</h2>
 
     <!-- User Info & Logout -->
@@ -14,7 +14,7 @@
 </header>
 
 {{-- mobile profile navs --}}
-<div id="mobile_profile_menu" class="lg:hidden flex w-full fixed top-[64px] z-30 -left-full transition-all duration-300" style="height: calc(100dvh - 64px)">
+<div id="mobile_profile_menu" class="lg:hidden flex w-full fixed top-[64px] z-40 -left-full transition-all duration-300" style="height: calc(100dvh - 64px)">
     <div class="w-[75%] h-full p-5 bg-white shadow-lg">
         <!-- User Info & Logout -->
         <div class="flex items-center justify-center my-5 space-x-4">
@@ -89,7 +89,7 @@
 
 <div class="flex poppins-regular">
     <!-- Sidebar Navigation -->
-    <aside class="w-[20%] sticky top-[72px] hidden lg:block bg-white shadow-lg p-5 overflow-auto" style="height: calc(100dvh - 72px);">
+    <aside class="w-[20%] sticky top-[72px] z-40 hidden lg:block bg-white shadow-lg p-5 overflow-auto" style="height: calc(100dvh - 72px);">
         <nav class="space-y-1">
             <a href="{{ route('franchise_dashboard') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg bg-pink-100">
                 <i class="ri-dashboard-line text-pink-500"></i>

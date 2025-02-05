@@ -38,3 +38,10 @@
 /* aside::-webkit-scrollbar{
     display:none;
 } */
+
+#editModal::-webkit-scrollbar{
+  display: none;
+}
+.profile_details::-webkit-scrollbar{
+  display: none;
+}
