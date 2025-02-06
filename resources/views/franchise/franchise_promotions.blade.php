@@ -36,8 +36,8 @@
                                 <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">2023-07-31</td>
                                 <td class="px-6 py-4 text-sm text-green-600 text-nowrap">Active</td>
                                 <td class="px-6 py-4 text-sm">
-                                    <button class="text-pink-500 hover:text-pink-700 mr-2"><i class="fas fa-edit"></i></button>
-                                    <button class="text-red-500 hover:text-red-700"><i class="fas fa-trash"></i></button>
+                                    <button class="text-pink-500 hover:text-pink-700 mr-2"><i class="ri-edit-box-line text-xl"></i></button>
+                                    <button class="text-pink-500 hover:text-pink-700"><i class="ri-delete-bin-2-line text-xl"></i></i></button>
                                 </td>
                             </tr>
                             <tr>
@@ -47,8 +47,8 @@
                                 <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">2023-07-31</td>
                                 <td class="px-6 py-4 text-sm text-green-600 text-nowrap">Active</td>
                                 <td class="px-6 py-4 text-sm">
-                                    <button class="text-pink-500 hover:text-pink-700 mr-2"><i class="fas fa-edit"></i></button>
-                                    <button class="text-red-500 hover:text-red-700"><i class="fas fa-trash"></i></button>
+                                    <button class="text-pink-500 hover:text-pink-700 mr-2"><i class="ri-edit-box-line text-xl"></i></button>
+                                    <button class="text-pink-500 hover:text-pink-700"><i class="ri-delete-bin-2-line text-xl"></i></i></button>
                                 </td>
                             </tr>
                             <!-- Add more rows dynamically -->
