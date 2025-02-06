@@ -52,7 +52,7 @@
     </div>
     
     <!-- Edit Profile Modal -->
-    <div id="editModal" class="fixed left-0 top-0 w-full py-12 overflow-auto bg-black bg-opacity-50 flex items-center justify-center hidden z-50" style="height: calc(100dvh)">
+    <div id="editModal" class="fixed left-0 h-[100dvh] top-0 w-full py-12 overflow-auto bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
         <div class="bg-white rounded-2xl w-11/12 md:w-2/3 lg:w-1/2 p-8 relative shadow-2xl transform transition-all duration-300 mt-96 md:mt-52">
           <div class="flex justify-between items-center border-b pb-4 mb-6">
             <h3 class="text-2xl font-semibold text-pink-600">Edit Business Profile</h3>

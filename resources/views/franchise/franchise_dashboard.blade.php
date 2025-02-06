@@ -39,14 +39,14 @@
     <!-- Recent Orders Table -->
     <div class="bg-white shadow-lg p-6 rounded-lg">
       <h3 class="font-semibold text-lg mb-4 text-pink-500">Recent Orders</h3>
-      <div class="overflow-x-auto">
+      <div id="scrollContainer" class="overflow-x-auto cursor-grab">
         <table class="min-w-full divide-y divide-gray-200">
           <thead>
             <tr>
-              <th class="px-4 py-2 text-left text-sm font-medium text-gray-500 text-nowrapmin-">Order ID</th>
-              <th class="px-4 py-2 text-left text-sm font-medium text-gray-500 text-nowrapmin-">Customer</th>
-              <th class="px-4 py-2 text-left text-sm font-medium text-gray-500 text-nowrapmin-">Amount</th>
-              <th class="px-4 py-2 text-left text-sm font-medium text-gray-500 text-nowrapmin-">Status</th>
+              <th class="px-4 py-2 text-left text-sm font-medium text-gray-500 text-nowrap">Order ID</th>
+              <th class="px-4 py-2 text-left text-sm font-medium text-gray-500 text-nowrap">Customer</th>
+              <th class="px-4 py-2 text-left text-sm font-medium text-gray-500 text-nowrap">Amount</th>
+              <th class="px-4 py-2 text-left text-sm font-medium text-gray-500 text-nowrap">Status</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-gray-100">
@@ -149,6 +149,38 @@
         }
       }
     }
+  });
+
+      // Drag-to-scroll functionality for table container
+      const scrollContainer = document.getElementById('scrollContainer');
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  scrollContainer.addEventListener('mousedown', (e) => {
+    isDown = true;
+    scrollContainer.classList.add('cursor-grabbing');
+    startX = e.pageX - scrollContainer.offsetLeft;
+    scrollLeft = scrollContainer.scrollLeft;
+    // Disable text selection during drag
+    scrollContainer.classList.add('select-none');
+  });
+  scrollContainer.addEventListener('mouseleave', () => {
+    isDown = false;
+    scrollContainer.classList.remove('cursor-grabbing');
+    scrollContainer.classList.remove('select-none');
+  });
+  scrollContainer.addEventListener('mouseup', () => {
+    isDown = false;
+    scrollContainer.classList.remove('cursor-grabbing');
+    scrollContainer.classList.remove('select-none');
+  });
+  scrollContainer.addEventListener('mousemove', (e) => {
+    if(!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - scrollContainer.offsetLeft;
+    const walk = (x - startX) * 2; // Adjust scroll speed as needed
+    scrollContainer.scrollLeft = scrollLeft - walk;
   });
 </script>
 @endsection

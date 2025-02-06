@@ -45,3 +45,15 @@
 .profile_details::-webkit-scrollbar{
   display: none;
 }
+
+#addProductModal::-webkit-scrollbar{
+  display: none;
+}
+
+#createModal::-webkit-scrollbar{
+  display: none;
+}
+
+#scrollContainer::-webkit-scrollbar{
+  display: none;
+}
