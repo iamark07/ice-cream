@@ -2,6 +2,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\franchise\FranchiseController;
+use App\Http\Controllers\customer\CustomerController;
 
 Route::get('/', function () {
     return view('frontend.home');
@@ -69,3 +70,12 @@ Route::get('/franchise-support',[FranchiseController::class,'franchise_support']
 Route::get('/franchise-promotions',[FranchiseController::class,'franchise_promotions'])->name('franchise_promotions');
 
 Route::get('/franchise-profile',[FranchiseController::class,'franchise_profile'])->name('franchise_profile');
+
+
+
+// customer
+Route::get('/customer-dashboard',[CustomerController::class,'customer_dashboard'])->name('customer_dashboard');
+
+Route::get('/ticket-management',[CustomerController::class,'customer_ticket_management'])->name('customer_ticket_management');
+
+Route::get('/customer-orders',[CustomerController::class,'customer_orders'])->name('customer_orders');

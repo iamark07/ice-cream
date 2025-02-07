@@ -47,6 +47,7 @@
                         <li><a href="{{ route('order_history') }}" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm"><i class="ri-shopping-bag-line text-pink-400 me-2"></i>My Orders</a></li>
                         <li><a href="{{ route('profile') }}" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm"><i class="ri-settings-line text-pink-400 me-2"></i>Settings</a></li>
                         <li><a href="{{ route('franchise_dashboard') }}" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm" title="Franchise Dashboard"><i class="ri-user-settings-line text-pink-400 me-2"></i>Dashboard</a></li>
+                        <li><a href="{{ route('customer_dashboard') }}" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm" title="Customer Dashboard"><i class="ri-user-settings-line text-pink-400 me-2"></i>Dashboard</a></li>
                         <li><a href="orders.html" class="p-2 flex w-full h-full hover:bg-gray-100 rounded transition text-sm"><i class="ri-user-settings-line text-pink-400 me-2"></i>Admin Panel</a></li>
                         <li class="relative">
                             <div id="language-btn" class="p-2 hover:bg-gray-100 rounded transition flex justify-between cursor-pointer text-sm"><span><i class="ri-global-line text-pink-400 me-2"></i>Language </span><i class="ri-arrow-right-s-line"></i>
@@ -133,6 +134,8 @@
                     <a href="{{ route('profile') }}" class="text-start px-4 py-2 hover:bg-pink-100"><i class="ri-user-2-line text-pink-400 text-lg me-2"></i>My Profile</a>
                     <a href="{{ route('order_history') }}" class="text-start px-4 py-2 hover:bg-pink-100"><i class="ri-shopping-bag-line text-pink-400 text-lg me-2"></i>My Orders</a>
                     <a href="{{ route('profile') }}" class="text-start px-4 py-2 hover:bg-pink-100"><i class="ri-settings-line text-pink-400 text-lg me-2"></i>Settings</a>
+                    <a href="{{ route('franchise_dashboard') }}" class="text-start px-4 py-2 hover:bg-pink-100"><i class="ri-user-settings-line text-pink-400 text-lg me-2"></i>Dashboard</a>
+                    <a href="{{ route('customer_dashboard') }}" class="text-start px-4 py-2 hover:bg-pink-100"><i class="ri-user-settings-line text-pink-400 text-lg me-2"></i>Dashboard</a>
                     <a href="orders.html" class="text-start px-4 py-2 hover:bg-pink-100"><i class="ri-user-settings-line text-pink-400 text-lg me-2"></i>Admin Panel</a>
                     <a href="{{ route('login') }}" class="text-start px-4 py-2 hover:bg-pink-100"><i class="ri-login-box-line text-pink-400 text-lg me-2"></i>Log in</a>
                     <a href="" class="text-start px-4 py-2 hover:bg-pink-100"><i class="ri-logout-box-line text-pink-400 text-lg me-2"></i>Log out</a>
