@@ -3,6 +3,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\franchise\FranchiseController;
 use App\Http\Controllers\customer\CustomerController;
+use App\Http\Controllers\admin\AdminController;
 
 Route::get('/', function () {
     return view('frontend.home');
@@ -79,3 +80,16 @@ Route::get('/customer-dashboard',[CustomerController::class,'customer_dashboard'
 Route::get('/ticket-management',[CustomerController::class,'customer_ticket_management'])->name('customer_ticket_management');
 
 Route::get('/customer-orders',[CustomerController::class,'customer_orders'])->name('customer_orders');
+
+
+
+// admin 
+Route::get('/admin-dashboard',[AdminController::class,'admin_dashboard'])->name('admin_dashboard');
+
+Route::get('/admin-users',[AdminController::class,'admin_users'])->name('admin_users');
+
+Route::get('/admin-orders',[AdminController::class,'admin_orders'])->name('admin_orders');
+
+Route::get('/admin-product',[AdminController::class,'admin_product'])->name('admin_product');
+
+Route::get('/admin-franchise',[AdminController::class,'admin_franchise'])->name('admin_franchise');
