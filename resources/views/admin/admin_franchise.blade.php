@@ -19,7 +19,7 @@
             </div>
 
             <!-- Status Filter -->
-            <select id="filterStatus" class="text-xs sm:text-base order-4 col-span-5 sm:col-span-2 border p-2 rounded">
+            <select id="filterStatus" class="cursor-pointer text-xs sm:text-base order-4 col-span-5 sm:col-span-2 border p-2 rounded">
                 <option value="">All Status</option>
                 <option value="pending">Pending</option>
                 <option value="approved">Approved</option>

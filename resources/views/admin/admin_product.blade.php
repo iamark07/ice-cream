@@ -13,7 +13,7 @@
                 <i class="ri-search-line absolute left-3 top-2.5 text-gray-500"></i>
                 <button type="submit" class="py-2 px-3 bg-pink-500 text-white rounded-r"><i class="ri-search-line"></i></button>
             </div>
-            <select id="filterCategory" class="text-xs sm:text-base order-4 col-span-5 sm:col-span-2 border p-2 rounded">
+            <select id="filterCategory" class="cursor-pointer text-xs sm:text-base order-4 col-span-5 sm:col-span-2 border p-2 rounded">
                 <option value="">All Categories</option>
             </select>
         </div>

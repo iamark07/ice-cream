@@ -19,7 +19,7 @@
             </div>
 
             <!-- Role Filter -->
-            <select id="filterRole" class="text-xs sm:text-base order-4 col-span-5 sm:col-span-2 border p-2 rounded">
+            <select id="filterRole" class="cursor-pointer text-xs sm:text-base order-4 col-span-5 sm:col-span-2 border p-2 rounded">
                 <option value="">All Roles</option>
                 <option value="super-admin">Super Admin</option>
                 <option value="admin">Admin</option>
