@@ -87,9 +87,26 @@ Route::get('/customer-orders',[CustomerController::class,'customer_orders'])->na
 Route::get('/admin-dashboard',[AdminController::class,'admin_dashboard'])->name('admin_dashboard');
 
 Route::get('/admin-users',[AdminController::class,'admin_users'])->name('admin_users');
+Route::get('/add-users',[AdminController::class,'add_users'])->name('add_users');
+Route::get('/edit-users',[AdminController::class,'edit_users'])->name('edit_users');
+Route::get('/delete-users',[AdminController::class,'delete_users'])->name('delete_users');
 
 Route::get('/admin-orders',[AdminController::class,'admin_orders'])->name('admin_orders');
 
 Route::get('/admin-product',[AdminController::class,'admin_product'])->name('admin_product');
+Route::get('/add-product',[AdminController::class,'add_product'])->name('add_product');
+Route::get('/edit-product',[AdminController::class,'edit_product'])->name('edit_product');
+Route::get('/delete-product',[AdminController::class,'delete_product'])->name('delete_product');
 
 Route::get('/admin-franchise',[AdminController::class,'admin_franchise'])->name('admin_franchise');
+Route::get('/add-franchise',[AdminController::class,'add_franchise'])->name('add_franchise');
+Route::get('/edit-franchise',[AdminController::class,'edit_franchise'])->name('edit_franchise');
+
+// promotions
+Route::get('/admin-promotions',[AdminController::class,'admin_promotions'])->name('admin_promotions');
+Route::get('/new-camapaign',[AdminController::class,'new_camapaign'])->name('new_camapaign');
+
+// admin promtions offers
+Route::get('/new-offers',[AdminController::class,'new_offers'])->name('new_offers');
+Route::get('/edit-offers',[AdminController::class,'edit_offers'])->name('edit_offers');
+Route::get('/delete-offers',[AdminController::class,'delete_offers'])->name('delete_offers');

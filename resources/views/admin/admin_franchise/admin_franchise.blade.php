@@ -8,7 +8,7 @@
             
             <!-- Add Franchise Button -->
             <div class="order-3 sm:order-2 col-span-4 md:col-span-4 flex flex-col sm:flex-row justify-center sm:justify-end items-center">
-                <button onclick="openAddFranchiseModal()" class="bg-pink-500 text-white px-4 py-2 rounded w-full sm:w-fit text-xs sm:text-base">Add Franchise</button>
+                <a href="{{ route('add_franchise') }}"><button onclick="openAddFranchiseModal()" class="bg-pink-500 text-white px-4 py-2 rounded w-full sm:w-fit text-xs sm:text-base">Add Franchise</button></a>
             </div>
 
             <!-- Search Bar -->
@@ -52,7 +52,7 @@
                         </td>
                         <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">
                             <button class="text-green-500 text-xl" title="Approve"><i class="ri-checkbox-circle-line"></i></button>
-                            <button class="text-yellow-500 text-xl ml-2" title="Edit"><i class="ri-edit-box-line"></i></button>
+                            <a href="{{ route('edit_franchise') }}"><button class="text-yellow-500 text-xl ml-2" title="Edit"><i class="ri-edit-box-line"></i></button></a>
                             <button class="text-red-600 text-xl ml-2" title="Suspend"><i class="ri-indeterminate-circle-line"></i></button>
                         </td>
                     </tr>
@@ -66,7 +66,7 @@
                         </td>
                         <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">
                             <button class="text-green-500 text-xl" title="Approve"><i class="ri-checkbox-circle-line"></i></button>
-                            <button class="text-yellow-500 text-xl ml-2" title="Edit"><i class="ri-edit-box-line"></i></button>
+                            <a href="{{ route('edit_franchise') }}"><button class="text-yellow-500 text-xl ml-2" title="Edit"><i class="ri-edit-box-line"></i></button></a>
                             <button class="text-red-600 text-xl ml-2" title="Suspend"><i class="ri-indeterminate-circle-line"></i></button>
                         </td>
                     </tr>
@@ -87,40 +87,9 @@
             <li class="pagination-btn cursor-pointer bg-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all">Next</li>
         </ul>
     </div>
-
-    <!-- Add Franchise Modal -->
-    <div id="franchiseModal" class="z-50 backdrop-blur-sm fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
-        <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
-            <h3 class="text-lg font-bold mb-4">Add New Franchise</h3>
-            <input type="text" id="franchiseName" placeholder="Franchise Name" class="text-sm border p-2 rounded w-full mb-2">
-            <input type="text" id="ownerName" placeholder="Owner Name" class="text-sm border p-2 rounded w-full mb-2">
-            <input type="text" id="location" placeholder="Location" class="text-sm border p-2 rounded w-full mb-2">
-            <input type="tel" id="contact" placeholder="Contact Number" class="text-sm border p-2 rounded w-full mb-2">
-            <div class="flex justify-end gap-2 text-sm">
-                <button onclick="closeFranchiseModal()" class="bg-gray-400 text-white px-4 py-2 rounded">Cancel</button>
-                <button onclick="saveFranchise()" class="bg-pink-600 text-white px-4 py-2 rounded">Save</button>
-            </div>
-        </div>
-    </div>
 </div>
 
 <script>
-    // Modal Handling
-    const franchiseModal = document.getElementById('franchiseModal');
-    
-    function openAddFranchiseModal() {
-        franchiseModal.classList.remove('hidden');
-    }
-
-    function closeFranchiseModal() {
-        franchiseModal.classList.add('hidden');
-    }
-
-    franchiseModal.addEventListener('click', (e) => {
-        if(e.target === franchiseModal) {
-            franchiseModal.classList.add('hidden');
-        }
-    });
 
     // Drag-to-scroll functionality for table container
     const scrollContainer = document.getElementById('scrollContainer');

@@ -8,7 +8,7 @@
             
             <!-- Add Admin Button Group -->
             <div class="order-3 sm:order-2 col-span-4 md:col-span-4 flex flex-col sm:flex-row justify-center sm:justify-end items-center">
-                <button onclick="openAddUserModal()" class="bg-pink-500 text-white px-4 py-2 rounded w-full sm:w-fit text-xs sm:text-base">Add Admin</button>
+                <a href="{{ route('add_users')}}"><button class="bg-pink-500 text-white px-4 py-2 rounded w-full sm:w-fit text-xs sm:text-base">Add User</button></a>
             </div>
 
             <!-- Search Bar -->
@@ -23,6 +23,9 @@
                 <option value="">All Roles</option>
                 <option value="super-admin">Super Admin</option>
                 <option value="admin">Admin</option>
+                <option value="admin">Customer</option>
+                <option value="admin">Franchise Owner</option>
+                <option value="admin">Staff</option>
             </select>
         </div>
 
@@ -49,8 +52,8 @@
                         <td class="px-6 py-4 text-sm text-gray-800 text-nowrap"><span class="bg-pink-100 text-pink-800 px-2 py-1 rounded-full text-xs">Super Admin</span></td>
                         <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">
                             <!-- Matching Action Icons -->
-                            <button class="text-yellow-500 text-xl"><i class="ri-edit-box-line"></i></button>
-                            <button class="text-red-600 text-xl ml-2"><i class="ri-delete-bin-2-line"></i></button>
+                            <a href="{{ route('edit_users') }}"><button class="text-yellow-500 text-xl"><i class="ri-edit-box-line"></i></button></a>
+                            <a href="{{ route('delete_users') }}"><button class="text-red-600 text-xl ml-2"><i class="ri-delete-bin-2-line"></i></button></a>
                         </td>
                     </tr>
                 </tbody>
@@ -69,42 +72,9 @@
             <li class="pagination-btn cursor-pointer bg-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all">Next</li>
         </ul>
     </div>
-
-    <!-- Modal with Consistent Styling -->
-    <div id="userModal" class="z-50 backdrop-blur-sm fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
-        <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
-            <h3 class="text-lg font-bold mb-4">Add Admin User</h3>
-            <input type="text" id="userName" placeholder="Full Name" class="text-sm border p-2 rounded w-full mb-2">
-            <input type="email" id="userEmail" placeholder="Email" class="text-sm border p-2 rounded w-full mb-2">
-            <select id="userRole" class="text-sm border p-2 rounded w-full mb-2">
-                <option value="">Select Role</option>
-                <option value="super-admin">Super Admin</option>
-                <option value="admin">Admin</option>
-            </select>
-            <div class="flex justify-end gap-2 text-sm">
-                <!-- Matching Button Colors -->
-                <button onclick="closeUserModal()" class="bg-gray-400 text-white px-4 py-2 rounded">Cancel</button>
-                <button onclick="saveUser()" class="bg-pink-600 text-white px-4 py-2 rounded">Save</button>
-            </div>
-        </div>
-    </div>
 </div>
 
 <script>
-
-    // Modal Functions
-    const userModal = document.getElementById('userModal');
-    function openAddUserModal() {
-        userModal.classList.remove('hidden');
-    }
-    function closeUserModal() {
-        userModal.classList.add('hidden');
-    }
-    userModal.addEventListener('click', (e) => {
-        if(e.target === userModal) {
-            userModal.classList.add('hidden');
-        }
-    });
 
     // Drag-to-scroll functionality for table container
     const scrollContainer = document.getElementById('scrollContainer');

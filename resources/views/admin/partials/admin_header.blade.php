@@ -53,7 +53,7 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
+                <a href="{{ route('admin_promotions') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
                     <i class="ri-megaphone-line text-pink-500"></i>
                     <span>Promotions</span>
                 </a>
@@ -117,7 +117,7 @@
                 <i class="ri-user-settings-line text-pink-500"></i>
                 <span>Users</span>
             </a>
-            <a href="#" class="text-sm flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
+            <a href="{{ route('admin_promotions') }}" class="text-sm flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
                 <i class="ri-megaphone-line text-pink-500"></i>
                 <span>Promotions</span>
             </a>

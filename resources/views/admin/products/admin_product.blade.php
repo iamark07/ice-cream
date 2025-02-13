@@ -6,7 +6,7 @@
         <div class="mb-4 grid grid-cols-9 gap-3 items-center">
             <h2 class="order-1 col-span-9 sm:col-span-5 text-xl font-bold">Product Management</h2>
             <div class="order-3 sm:order-2 col-span-4 md:col-span-4 flex flex-col sm:flex-row justify-center sm:justify-end items-center">
-                <button onclick="openAddModal()" class="bg-pink-500 text-white px-4 py-2 rounded  w-full sm:w-fit text-xs sm:text-base">Add Product</button>
+                <a href="{{ route('add_product') }}"><button class="bg-pink-500 text-white px-4 py-2 rounded  w-full sm:w-fit text-xs sm:text-base">Add Product</button></a>
             </div>
             <div class="order-2 sm:order-3 col-span-9 sm:col-span-7 w-full relative flex">
                 <input type="text" id="search" placeholder="Search product..." class="outline-none border p-2 rounded-l w-full pl-10" onkeyup="searchProduct()">
@@ -35,8 +35,8 @@
                         <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">₹ 100</td>
                         <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">50</td>
                         <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">
-                            <button class="text-yellow-500 text-xl"><i class="ri-edit-box-line"></i></button>
-                            <button class="text-red-600 text-xl ml-2"><i class="ri-delete-bin-2-line"></i></button>
+                            <a href="{{ route('edit_product') }}"><button class="text-yellow-500 text-xl"><i class="ri-edit-box-line"></i></button></a>
+                            <a href="{{ route('delete_product') }}"><button class="text-red-600 text-xl ml-2"><i class="ri-delete-bin-2-line"></i></button></a>
                         </td>
                     </tr>
                     <tr>
@@ -45,8 +45,8 @@
                         <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">₹ 150</td>
                         <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">30</td>
                         <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">
-                            <button class="text-yellow-500 text-xl"><i class="ri-edit-box-line"></i></button>
-                            <button class="text-red-600 text-xl ml-2"><i class="ri-delete-bin-2-line"></i></button>
+                            <a href="{{ route('edit_product') }}"><button class="text-yellow-500 text-xl"><i class="ri-edit-box-line"></i></button></a>
+                            <a href="{{ route('delete_product') }}"><button class="text-red-600 text-xl ml-2"><i class="ri-delete-bin-2-line"></i></button></a>
                         </td>
                     </tr>
                 </tbody>
@@ -85,20 +85,6 @@
 </div>
 
 <script>
-    const product_model = document.getElementById('productModal');
-    function openAddModal() {
-        product_model.classList.remove('hidden');
-    }
-
-    function closeModal() {
-        product_model.classList.add('hidden');
-    }
-
-    product_model.addEventListener('click', (e) => {
-        if(e.target === product_model) {
-            product_model.classList.add('hidden');
-        }
-    });
 
     // Drag-to-scroll functionality for table container
     const scrollContainer = document.getElementById('scrollContainer');
