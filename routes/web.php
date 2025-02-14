@@ -116,3 +116,10 @@ Route::get('/analytics-reports',[AdminController::class,'admin_reports'])->name(
 
 // cms management
 Route::get('/cms-management',[AdminController::class,'admin_cms_management'])->name('admin_cms_management');
+Route::get('/seo-marketing',[AdminController::class,'seo_marketing'])->name('seo_marketing');
+
+// admin customer support
+Route::get('/admin-customer-support',[AdminController::class,'admin_customer_support'])->name('admin_customer_support');
+
+// admin security
+Route::get('/admin-security',[AdminController::class,'admin_security'])->name('admin_security');

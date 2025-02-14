@@ -71,13 +71,19 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
+                <a href="{{ route('seo_marketing') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
+                    <i class="ri-search-line text-pink-500"></i>
+                    <span>SEO & Marketing</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('admin_customer_support') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
                     <i class="ri-customer-service-2-line text-pink-500"></i>
                     <span>Customer Support</span>
                 </a>
             </li>
             <li>
-                <a href="#" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
+                <a href="{{ route('admin_security') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
                     <i class="ri-shield-check-line text-pink-500"></i>
                     <span>Security</span>
                 </a>
@@ -129,15 +135,15 @@
                 <i class="ri-pages-line text-pink-500"></i>
                 <span>Website CMS</span>
             </a>
-            <a href="#" class="text-sm flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
+            <a href="{{ route('seo_marketing') }}" class="text-sm flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
                 <i class="ri-search-line text-pink-500"></i>
                 <span>SEO & Marketing</span>
             </a>
-            <a href="#" class="text-sm flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
+            <a href="{{ route('admin_customer_support') }}" class="text-sm flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
                 <i class="ri-customer-service-2-line text-pink-500"></i>
                 <span>Customer Support</span>
             </a>
-            <a href="#" class="text-sm flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
+            <a href="{{ route('admin_security') }}" class="text-sm flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
                 <i class="ri-shield-check-line text-pink-500"></i>
                 <span>Security</span>
             </a>

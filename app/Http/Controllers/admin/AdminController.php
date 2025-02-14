@@ -101,6 +101,24 @@ class AdminController extends Controller
     // cms management
     public function admin_cms_management()
    {
-    return view('admin.admin_cms_management');
+    return view('admin.website_cms_management.admin_cms_management');
+    }
+
+    // seo and marketing
+    public function seo_marketing()
+   {
+    return view('admin.seo_marketing');
+    }
+
+    // customer support
+    public function admin_customer_support()
+   {
+    return view('admin.admin_customer_support');
+    }
+
+    // security compliance
+    public function admin_security()
+   {
+    return view('admin.admin_security');
     }
 }
