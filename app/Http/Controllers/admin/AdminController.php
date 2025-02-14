@@ -91,4 +91,16 @@ class AdminController extends Controller
     return view('admin.promotions.offers.delete_offers');
     }
 
+
+    // analytics reports
+    public function admin_reports()
+   {
+    return view('admin.admin_reports');
+    }
+
+    // cms management
+    public function admin_cms_management()
+   {
+    return view('admin.admin_cms_management');
+    }
 }

@@ -59,13 +59,13 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
+                <a href="{{ route('admin_reports') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
                     <i class="ri-bar-chart-2-line text-pink-500"></i>
                     <span>Reports</span>
                 </a>
             </li>
             <li>
-                <a href="#" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
+                <a href="{{ route('admin_cms_management') }}" class="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
                     <i class="ri-pages-line text-pink-500"></i>
                     <span>Website CMS</span>
                 </a>
@@ -121,11 +121,11 @@
                 <i class="ri-megaphone-line text-pink-500"></i>
                 <span>Promotions</span>
             </a>
-            <a href="#" class="text-sm flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
+            <a href="{{ route('admin_reports') }}" class="text-sm flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
                 <i class="ri-bar-chart-2-line text-pink-500"></i>
                 <span>Reports</span>
             </a>
-            <a href="#" class="text-sm flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
+            <a href="{{ route('admin_cms_management') }}" class="text-sm flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-pink-100">
                 <i class="ri-pages-line text-pink-500"></i>
                 <span>Website CMS</span>
             </a>

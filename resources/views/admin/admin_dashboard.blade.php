@@ -10,7 +10,7 @@
     <!-- Stats Cards with Chart -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Total Revenue -->
-        <div class="bg-gradient-to-r from-pink-500 to-pink-700 text-white p-6 rounded-lg shadow-xl relative flex flex-col justify-center items-center">
+        <div class="bg-blue-100 text-gray-700 p-6 rounded-lg shadow-md relative flex flex-col justify-center items-center">
             <i class="ri-money-rupee-circle-fill text-4xl mr-4 mb-2"></i>
             <div>
                 <h3 class="font-semibold text-center">Total Revenue</h3>
@@ -19,7 +19,7 @@
         </div>
         
         <!-- Total Orders -->
-        <div class="bg-gradient-to-r from-pink-500 to-pink-700 text-white p-6 rounded-lg shadow-xl relative flex flex-col justify-center items-center">
+        <div class="bg-yellow-100 text-gray-700 p-6 rounded-lg shadow-md relative flex flex-col justify-center items-center">
             <i class="ri-shopping-cart-2-fill text-4xl mr-4 mb-2"></i>
             <div>
                 <h3 class="font-semibold text-center">Total Orders</h3>
@@ -28,7 +28,7 @@
         </div>
         
         <!-- Total Users -->
-        <div class="bg-gradient-to-r from-pink-500 to-pink-700 text-white p-6 rounded-lg shadow-xl relative flex flex-col justify-center items-center">
+        <div class="bg-purple-100 text-gray-700 p-6 rounded-lg shadow-md relative flex flex-col justify-center items-center">
             <i class="ri-user-3-fill text-4xl mr-4 mb-2"></i>
             <div>
                 <h3 class="font-semibold text-center">Total Users</h3>
@@ -37,7 +37,7 @@
         </div>
         
         <!-- Active Vendors -->
-        <div class="bg-gradient-to-r from-pink-500 to-pink-700 text-white p-6 rounded-lg shadow-xl relative flex flex-col justify-center items-center">
+        <div class="bg-green-100 text-gray-700 p-6 rounded-lg shadow-md relative flex flex-col justify-center items-center">
             <i class="ri-store-3-fill text-4xl mr-4 mb-2"></i>
             <div>
                 <h3 class="font-semibold text-center">Active Vendors</h3>

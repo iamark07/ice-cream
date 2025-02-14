@@ -110,3 +110,9 @@ Route::get('/new-camapaign',[AdminController::class,'new_camapaign'])->name('new
 Route::get('/new-offers',[AdminController::class,'new_offers'])->name('new_offers');
 Route::get('/edit-offers',[AdminController::class,'edit_offers'])->name('edit_offers');
 Route::get('/delete-offers',[AdminController::class,'delete_offers'])->name('delete_offers');
+
+// admin analytics reports
+Route::get('/analytics-reports',[AdminController::class,'admin_reports'])->name('admin_reports');
+
+// cms management
+Route::get('/cms-management',[AdminController::class,'admin_cms_management'])->name('admin_cms_management');
