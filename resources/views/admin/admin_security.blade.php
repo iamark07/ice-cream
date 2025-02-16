@@ -30,29 +30,29 @@
         </div>
 
         <!-- Compliance Policies Section -->
-<div class="bg-gradient-to-r from-blue-50 to-gray-100 p-6 rounded-lg shadow-lg mb-6">
-    <div class="flex items-center justify-between mb-3">
-        <h3 class="text-lg font-semibold text-gray-800">Compliance Policies</h3>
-        <span class="text-sm text-gray-600">Last Updated: Feb 2025</span>
-    </div>
-    <ul class="space-y-2">
-        <li class="flex items-center text-gray-700 text-sm">
-            <i class="ri-shield-check-fill text-blue-500 mr-2"></i> All user data is encrypted and securely stored.
-        </li>
-        <li class="flex items-center text-gray-700 text-sm">
-            <i class="ri-file-list-3-line text-green-500 mr-2"></i> Regular audits are conducted for compliance.
-        </li>
-        <li class="flex items-center text-gray-700 text-sm">
-            <i class="ri-lock-password-line text-yellow-500 mr-2"></i> Multi-factor authentication enforced for access control.
-        </li>
-        <li class="flex items-center text-gray-700 text-sm">
-            <i class="ri-eye-line text-red-500 mr-2"></i> AI-powered fraud detection monitoring 24/7.
-        </li>
-    </ul>
-    <button class="mt-4 px-5 py-2.5 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition">
-        <i class="ri-settings-3-line mr-2"></i> Manage Policies
-    </button>
-</div>
+        <div class="bg-gradient-to-r from-blue-50 to-gray-100 p-6 rounded-lg shadow-lg mb-6">
+            <div class="flex items-center justify-between mb-3">
+                <h3 class="text-lg font-semibold text-gray-800">Compliance Policies</h3>
+                <span class="text-sm text-gray-600">Last Updated: Feb 2025</span>
+            </div>
+            <ul class="space-y-2">
+                <li class="flex items-center text-gray-700 text-sm">
+                    <i class="ri-shield-check-fill text-blue-500 mr-2"></i> All user data is encrypted and securely stored.
+                </li>
+                <li class="flex items-center text-gray-700 text-sm">
+                    <i class="ri-file-list-3-line text-green-500 mr-2"></i> Regular audits are conducted for compliance.
+                </li>
+                <li class="flex items-center text-gray-700 text-sm">
+                    <i class="ri-lock-password-line text-yellow-500 mr-2"></i> Multi-factor authentication enforced for access control.
+                </li>
+                <li class="flex items-center text-gray-700 text-sm">
+                    <i class="ri-eye-line text-red-500 mr-2"></i> AI-powered fraud detection monitoring 24/7.
+                </li>
+            </ul>
+            <button class="mt-4 px-5 py-2.5 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition">
+                <i class="ri-settings-3-line mr-2"></i> Manage Policies
+            </button>
+        </div>
 
 
         <!-- Fraud Detection Table -->

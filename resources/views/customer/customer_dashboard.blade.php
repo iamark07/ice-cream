@@ -54,6 +54,7 @@
             <p class="text-gray-600">Update password and manage preferences.</p>
             <button class="mt-4 bg-pink-500 text-white px-4 py-2 rounded-lg">Settings</button>
         </div>
+        
     </div>
 </div>
 @endsection
