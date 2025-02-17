@@ -75,13 +75,20 @@ Route::get('/franchise-profile',[FranchiseController::class,'franchise_profile']
 
 
 // customer
-Route::get('/customer-dashboard',[CustomerController::class,'customer_dashboard'])->name('customer_dashboard');
 
 Route::get('/ticket-management',[CustomerController::class,'customer_ticket_management'])->name('customer_ticket_management');
 
 Route::get('/customer-orders',[CustomerController::class,'customer_orders'])->name('customer_orders');
 
 Route::get('/franchise-support',[CustomerController::class,'franchise_support'])->name('franchise_support');
+
+Route::get('/customer-complaint',[CustomerController::class,'customer_complaint'])->name('customer_complaint');
+
+Route::get('/performance-reports',[CustomerController::class,'customer_performance_reports'])->name('customer_performance_reports');
+
+Route::get('/faqs-management',[CustomerController::class,'customer_faqs_management'])->name('customer_faqs_management');
+
+Route::get('/live-chat',[CustomerController::class,'customer_live_chat'])->name('customer_live_chat');
 
 
 
