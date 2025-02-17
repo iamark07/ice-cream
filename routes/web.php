@@ -81,6 +81,8 @@ Route::get('/ticket-management',[CustomerController::class,'customer_ticket_mana
 
 Route::get('/customer-orders',[CustomerController::class,'customer_orders'])->name('customer_orders');
 
+Route::get('/franchise-support',[CustomerController::class,'franchise_support'])->name('franchise_support');
+
 
 
 // admin 

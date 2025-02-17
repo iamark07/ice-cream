@@ -22,4 +22,9 @@ class CustomerController extends Controller
     return view('customer.customer_orders');
 
    }
+    public function franchise_support()
+   {
+    return view('customer.franchise_support');
+
+   }
 }

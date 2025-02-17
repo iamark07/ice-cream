@@ -1,134 +1,121 @@
 @extends('customer.partials.customer_app')
 
 @section('customer_content')
-<div class="min-h-screen bg-gray-50 py-10 p-6">
-    <!-- Page Title -->
-    <h2 class="text-3xl font-bold text-gray-800 mb-6">Ticket Management</h2>
+<div class="p-6 bg-gray-50 min-h-screen py-14">
+    <div class="max-w-6xl mx-auto bg-white p-6 rounded-lg shadow">       
+        <div class="mb-4 grid grid-cols-9 gap-3 items-center">
+            <h2 class="order-1 col-span-9 sm:col-span-5 text-xl font-bold">Ticket Management</h2>
+            
+            <!-- Add Ticket Button -->
+            <div class="order-3 sm:order-2 col-span-4 md:col-span-4 flex flex-col sm:flex-row justify-center sm:justify-end items-center">
+                <button class="bg-pink-500 text-white px-4 py-2 rounded w-full sm:w-fit text-xs sm:text-base">Create Ticket</button>
+            </div>
 
-    <!-- Tickets Table -->
-    <div class="bg-white p-6 rounded-lg shadow-lg mt-6">
-        <h3 class="text-lg font-bold text-pink-600 mb-4">Your Support Tickets</h3>
+            <!-- Search Bar -->
+            <div class="order-2 sm:order-3 col-span-9 sm:col-span-7 w-full relative flex">
+                <input type="text" placeholder="Search tickets..." class="outline-none border p-2 rounded-l w-full pl-10">
+                <i class="ri-search-line absolute left-3 top-2.5 text-gray-500"></i>
+                <button type="submit" class="py-2 px-3 bg-pink-500 text-white rounded-r"><i class="ri-search-line"></i></button>
+            </div>
+
+            <!-- Status Filter -->
+            <select class="cursor-pointer text-xs sm:text-base order-4 col-span-5 sm:col-span-2 border p-2 rounded outline-none">
+                <option value="">All Status</option>
+                <option value="open">Open</option>
+                <option value="in-progress">In Progress</option>
+                <option value="resolved">Resolved</option>
+            </select>
+        </div>
+
+        <!-- Table Section -->
         <div id="scrollContainer" class="overflow-x-auto cursor-grab">
-            <table class="min-w-full divide-y divide-gray-300">
+            <table class="min-w-full divide-y divide-gray-200">
                 <thead class="bg-gray-50">
-                    <tr class="text-gray-700 text-center">
-                        <th class="border px-4 py-3 text-nowrap">Ticket ID</th>
-                        <th class="border px-4 py-3 text-nowrap">Subject</th>
-                        <th class="border px-4 py-3 text-nowrap">Status</th>
-                        <th class="border px-4 py-3 text-nowrap">Created At</th>
-                        <th class="border px-4 py-3 text-nowrap">Actions</th>
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider text-nowrap">Request ID</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider text-nowrap">Issue</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider text-nowrap">Status</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider text-nowrap">Created On</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider text-nowrap">Actions</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr class="text-gray-700 text-center">
-                        <td class="border px-4 py-3 text-nowrap">#12345</td>
-                        <td class="border px-4 py-3 text-nowrap">Order not received</td>
-                        <td class="border px-4 py-3 text-nowrap text-yellow-500" id="ticketStatus">Pending</td>
-                        <td class="border px-4 py-3 text-nowrap">Feb 7, 2025</td>
-                        <td class="border px-4 py-3 text-nowrap">
-                            <button class="bg-pink-500 text-white px-4 py-1 rounded-lg hover:bg-pink-600 transition" onclick="openModal('#12345', 'Order not received', 'Pending', 'Feb 7, 2025')">View</button>
+                <tbody class="divide-y divide-gray-200">
+                    <!-- Sample Row -->
+                    <tr>
+                        <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">#98765</td>
+                        <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">Order Not Delivered</td>
+                        <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">
+                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">Pending</span>
+                        </td>
+                        <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">Feb 15, 2025</td>
+                        <td class="px-6 py-4 text-sm text-gray-800 text-nowrap flex space-x-2">
+                            <button class="text-pink-500 text-xl" title="View"><i class="ri-eye-2-line"></i></button>
+                            <button class="text-green-500 text-xl" title="Resolve"><i class="ri-checkbox-circle-fill"></i></button>
+                            <button class="text-red-500 text-xl" title="Reject"><i class="ri-close-circle-fill"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">#98766</td>
+                        <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">Refund Not Processed</td>
+                        <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Completed</span>
+                        </td>
+                        <td class="px-6 py-4 text-sm text-gray-800 text-nowrap">Feb 14, 2025</td>
+                        <td class="px-6 py-4 text-sm text-gray-800 text-nowrap flex space-x-2">
+                            <button class="text-pink-500 text-xl" title="View"><i class="ri-eye-2-line"></i></button>
+                            <button class="text-green-500 text-xl" title="Resolve"><i class="ri-checkbox-circle-fill"></i></button>
+                            <button class="text-red-500 text-xl" title="Reject"><i class="ri-close-circle-fill"></i></button>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-</div>
-
-<!-- Ticket Details Modal -->
-<div id="ticketModal" class="fixed inset-0 z-50 bg-black bg-opacity-50 hidden flex justify-center items-center p-4">
-    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md relative">
-        <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-600 hover:text-red-500">✖</button>
-        <h2 class="text-xl font-bold text-pink-600">Ticket Details</h2>
-        <p class="mt-4"><strong>ID:</strong> <span id="modalTicketId"></span></p>
-        <p><strong>Subject:</strong> <span id="modalSubject"></span></p>
-        <p><strong>Status:</strong> <span id="modalStatus"></span></p>
-        <p><strong>Created At:</strong> <span id="modalDate"></span></p>
-        <button id="resolveButton" class="bg-green-500 text-white px-4 py-2 rounded-lg mt-4 w-full hover:bg-green-600 transition">Mark as Resolved</button>
-        <button class="bg-pink-500 text-white px-4 py-2 rounded-lg mt-4 w-full hover:bg-pink-600 transition" onclick="closeModal()">Close</button>
+    <!-- Pagination -->
+    <div class="flex justify-center mt-10">
+        <ul class="flex justify-center gap-3">
+            <li class="pagination-btn cursor-pointer bg-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all">Prev</li>
+            
+            <li class="pagination-btn cursor-pointer bg-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all">1</li>
+            <li class="pagination-btn cursor-pointer bg-white text-black px-4 py-2 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all">2</li>
+            <li class="pagination-btn cursor-pointer bg-white text-black px-4 py-2 rounded-lg shadow-md hover:bg-pink-500  hover:text-white transition-all">3</li>
+            
+            <li class="pagination-btn cursor-pointer bg-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all">Next</li>
+        </ul>
     </div>
 </div>
-
-<!-- New Ticket Modal -->
-<div id="newTicketModal" class="fixed inset-0 z-50 bg-black bg-opacity-50 hidden flex justify-center items-center p-4">
-    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md relative">
-        <button onclick="closeNewTicketModal()" class="absolute top-3 right-3 text-gray-600 hover:text-red-500">✖</button>
-        <h2 class="text-xl font-bold text-pink-600">Create New Ticket</h2>
-        <form class="mt-4">
-            <label class="block text-gray-700">Subject</label>
-            <input type="text" class="w-full p-2 border rounded-lg mt-1" placeholder="Enter subject">
-            
-            <label class="block text-gray-700 mt-3">Description</label>
-            <textarea class="w-full p-2 border rounded-lg mt-1" rows="4" placeholder="Describe your issue"></textarea>
-            
-            <button type="submit" class="bg-pink-500 text-white px-4 py-2 rounded-lg mt-4 w-full hover:bg-pink-600 transition">Submit</button>
-        </form>
-    </div>
-</div>
-
 <script>
 
     // Drag-to-scroll functionality for table container
     const scrollContainer = document.getElementById('scrollContainer');
-        let isDown = false;
-        let startX;
-        let scrollLeft;
+    let isDown = false;
+    let startX;
+    let scrollLeft;
 
-        scrollContainer.addEventListener('mousedown', (e) => {
-            isDown = true;
-            scrollContainer.classList.add('cursor-grabbing');
-            startX = e.pageX - scrollContainer.offsetLeft;
-            scrollLeft = scrollContainer.scrollLeft;
-            // Disable text selection during drag
-            scrollContainer.classList.add('select-none');
-        });
-        scrollContainer.addEventListener('mouseleave', () => {
-            isDown = false;
-            scrollContainer.classList.remove('cursor-grabbing');
-            scrollContainer.classList.remove('select-none');
-        });
-        scrollContainer.addEventListener('mouseup', () => {
-            isDown = false;
-            scrollContainer.classList.remove('cursor-grabbing');
-            scrollContainer.classList.remove('select-none');
-        });
-        scrollContainer.addEventListener('mousemove', (e) => {
-            if(!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - scrollContainer.offsetLeft;
-            const walk = (x - startX) * 2; // Adjust scroll speed as needed
-            scrollContainer.scrollLeft = scrollLeft - walk;
-        });
-
-    function openModal(id, subject, status, date) {
-        document.getElementById('modalTicketId').innerText = id;
-        document.getElementById('modalSubject').innerText = subject;
-        document.getElementById('modalStatus').innerText = status;
-        document.getElementById('modalDate').innerText = date;
-        document.getElementById('resolveButton').style.display = status === 'Resolved' ? 'none' : 'block';
-        document.getElementById('ticketModal').classList.remove('hidden');
-    }
-    function closeModal() {
-        document.getElementById('ticketModal').classList.add('hidden');
-    }
-    function openNewTicketModal() {
-        document.getElementById('newTicketModal').classList.remove('hidden');
-    }
-    function closeNewTicketModal() {
-        document.getElementById('newTicketModal').classList.add('hidden');
-    }
-    
-    const newTicketModal = document.getElementById("newTicketModal");
-    newTicketModal.addEventListener('click', (e) => {
-            if(e.target === newTicketModal) {
-                newTicketModal.classList.add('hidden');
-            }
-        });
-    const ticketModal = document.getElementById("ticketModal");
-    ticketModal.addEventListener('click', (e) => {
-            if(e.target === ticketModal) {
-                ticketModal.classList.add('hidden');
-            }
-        });
+    scrollContainer.addEventListener('mousedown', (e) => {
+        isDown = true;
+        scrollContainer.classList.add('cursor-grabbing');
+        startX = e.pageX - scrollContainer.offsetLeft;
+        scrollLeft = scrollContainer.scrollLeft;
+        // Disable text selection during drag
+        scrollContainer.classList.add('select-none');
+    });
+    scrollContainer.addEventListener('mouseleave', () => {
+        isDown = false;
+        scrollContainer.classList.remove('cursor-grabbing');
+        scrollContainer.classList.remove('select-none');
+    });
+    scrollContainer.addEventListener('mouseup', () => {
+        isDown = false;
+        scrollContainer.classList.remove('cursor-grabbing');
+        scrollContainer.classList.remove('select-none');
+    });
+    scrollContainer.addEventListener('mousemove', (e) => {
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - scrollContainer.offsetLeft;
+        const walk = (x - startX) * 2; // Adjust scroll speed as needed
+        scrollContainer.scrollLeft = scrollLeft - walk;
+    });
 </script>
 @endsection

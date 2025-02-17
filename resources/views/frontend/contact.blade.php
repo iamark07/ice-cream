@@ -11,7 +11,7 @@
     </section>
     
     <!-- Contact Form Section -->
-    <section class="py-16 px-5 md:px-10 lg:px-20 text-gray-800">
+    <section class="py-16 px-5 md:px-10 lg:px-20 text-gray-800 poppins-regular">
         <div class="max-w-6xl mx-auto">
             <div class="w-full flex flex-col items-center">
 
